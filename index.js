@@ -37,3 +37,7 @@ DiscordClient.login(process.env.BOT_TOKEN);
 
 // process.stdout.write("\u001b[3J\u001b[2J\u001b[1J");
 // console.clear();
+
+process.on('uncaughtException', function (err) {
+    console.log('Caught exception:', err);
+});
