@@ -5,7 +5,7 @@ const TrackManager = require('./src/track-manager');
 const DiscordClient = require('./src/discord-client');
 
 if (!process.env.BOT_TOKEN || process.env.BOT_CLIENT) {
-    console.error('BOT_TOKEN and BOT_CLIENT are required');
+    console.error('BOT_TOKEN and BOT_CLIENT are required', process.env);
     return;
 }
 
