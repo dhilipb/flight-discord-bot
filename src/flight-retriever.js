@@ -3,8 +3,14 @@ const axios = require('axios');
 const FlightRetriever = {
     search: async tail => {
         const searchResponse = (await axios.get(`https://e1.flightcdn.com/ajax/ignoreall/omnisearch/flight.rvt?v=50&searchterm=${tail}`)).data;
-        const flightSearch = searchResponse.data.length === 1 ? searchResponse.data[0] : searchResponse.data.find(row => row.major_airline === '1');
-        return flightSearch;
+        const data = searchResponse.data;
+        if (!data.length || data[0].description.toLowerCase() === 'Unknown Owner') {
+            return null;
+        }
+        if (data.length === 1) {
+            return data;
+        } 
+        return data.find(row => row.major_airline === '1')
     },
     get: async tail => {
         const flightSearch = await FlightRetriever.search(tail);

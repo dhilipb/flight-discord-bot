@@ -22,13 +22,13 @@ const TrackManager = {
             trackDate
         };
 
+        if (!await FlightRetriever.search(trackTail)) {
+            await interaction.reply(`Couldn't find tail "${trackTail}"`);
+            return;
+        }
+
         if (trackDate === 'today' || !trackDate) {
             store.trackDate = dayjs().format('D/M/YYYY');
-        } else {
-            if (!FlightRetriever.search(trackTail)) {
-                await interaction.reply(`Couldn't find tail "${trackTail}"`);
-                return;
-            }
         }
 
         await interaction.reply(`Your flight **${store.trackTail.toUpperCase()}** at ${store.trackDate} has been added to tracking`);
