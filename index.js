@@ -11,7 +11,7 @@ DiscordClient.on('ready', async () => {
     await TrackManager.trackToday();
     setInterval(async () => {
         await TrackManager.trackToday();
-    }, 60 * 2 * 1000);
+    }, 60 * 3 * 1000);
 });
 
 

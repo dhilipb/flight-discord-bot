@@ -2,6 +2,8 @@ const axios = require('axios');
 const fs = require('fs');
 const { EmbedBuilder } = require('discord.js');
 
+const DASH = '=';
+
 function convertTZ(times, tz) {
     tz = tz.replace(':', '');
     const scheduledTime = new Date(times.scheduled * 1000).toLocaleString("en-US", { timeZone: tz });
@@ -37,7 +39,7 @@ function calculateProgressBar(percent) {
     const before = Math.max(progress - 1, 0);
     const after = totalBars - before - 1;
 
-    return '-'.repeat(before) + '✈' + '-'.repeat(after);
+    return DASH.repeat(before) + '✈' + DASH.repeat(after);
 }
 
 const MessageGenerator = {
@@ -59,6 +61,7 @@ const MessageGenerator = {
 
         const flightAwareUrl = `https://uk.flightaware.com/live/flight/${flight.ident}`;
 
+        try {
         const embedText = new EmbedBuilder()
             .setURL(flightAwareUrl)
             .setAuthor({
@@ -74,8 +77,8 @@ const MessageGenerator = {
                 {
                     name: 'From',
                     value: [
-                        `${flight.origin.friendlyLocation} (${flight.origin.iata}) ${getTerminal(flight.origin.terminal)}`,
-                        '-'.repeat(20),
+                        `${flight.origin.friendlyLocation} (${flight.origin.iata}) ${getTerminal(flight.origin.terminal) || ''}`,
+                        DASH.repeat(30),
                         convertTZ(flight.gateDepartureTimes, flight.origin.TZ),
                         calculateDelay(flight.gateDepartureTimes)
                     ].join('\n')
@@ -83,21 +86,21 @@ const MessageGenerator = {
                 {
                     name: 'To',
                     value: [
-                        `${flight.destination.friendlyLocation} (${flight.destination.iata}) ${getTerminal(flight.destination.terminal)}`,
-                        '-'.repeat(20),
+                        `${flight.destination.friendlyLocation} (${flight.destination.iata}) ${getTerminal(flight.destination.terminal) || ''}`,
+                        DASH.repeat(30),
                         convertTZ(flight.gateArrivalTimes, flight.destination.TZ),
                         calculateDelay(flight.gateArrivalTimes)
                     ].join('\n')
                 },
                 {
                     name: 'Aircraft',
-                    value: [
-                        flight.aircraft.friendlyType
-                    ].join('\n')
+                    value: flight.aircraft.friendlyType
                 }
             ]);
-
-        return embedText;
+            return embedText;
+        } catch (e) {
+            return null;
+        }
     }
 }
 
