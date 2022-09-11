@@ -3,6 +3,7 @@ const { initBot } = require('./src/commands');
 
 const TrackManager = require('./src/track-manager');
 const DiscordClient = require('./src/discord-client');
+const MessageGenerator = require('./src/message-generator');
 
 if (!process.env.BOT_TOKEN || !process.env.BOT_CLIENT) {
     console.error('BOT_TOKEN and BOT_CLIENT are required');
@@ -29,6 +30,9 @@ DiscordClient.on('interactionCreate', async (interaction) => {
     } else if (commandName === 'track') {
         await TrackManager.addToTrack(interaction);
         await TrackManager.trackToday();
+    } else if (commandName === 'check') {
+        const replyText = await MessageGenerator.get(flight);
+        interaction.reply({ embeds: [replyText] });
     }
 });
 

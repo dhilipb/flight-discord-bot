@@ -3,8 +3,12 @@ const { REST } = require('@discordjs/rest');
 
 const commands = [
     new SlashCommandBuilder().setName('ping').setDescription('Replies with pong!'),
-    new SlashCommandBuilder().setName('track')
-        .setDescription('Track a flight for a date')
+    new SlashCommandBuilder().setName('check').setDescription('Quick check for a flight tail')
+        .addStringOption(option =>
+            option.setName('tail')
+                .setDescription('Flight tail name')
+                .setRequired(true)),
+    new SlashCommandBuilder().setName('track').setDescription('Track a flight for a date')
         .addStringOption(option =>
             option.setName('tail')
                 .setDescription('Flight tail name')
