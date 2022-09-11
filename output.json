@@ -1,0 +1,3704 @@
+{
+    "version": "2.24",
+    "summary": false,
+    "flights": {
+        "UAE5-1662637620-schedule-0575:6": {
+           
+            "adhoc": false,
+            "adhocAvailable": false,
+            "aircraft": {
+                "type": "A388",
+                "lifeguard": false,
+                "heavy": false,
+                "tail": null,
+                "owner": null,
+                "ownerLocation": null,
+                "owner_type": null,
+                "canMessage": false,
+                "friendlyType": "Airbus A380-800 (quad-jet)",
+                "typeDetails": {
+                    "manufacturer": "Airbus",
+                    "model": "A380-800",
+                    "type": "quad-jet",
+                    "engCount": "4",
+                    "engType": "jet"
+                }
+            },
+            "aireonCandidate": false,
+            "airline": {
+                "fullName": "Emirates",
+                "shortName": "Emirates",
+                "icao": "UAE",
+                "iata": "EK",
+                "callsign": "Emirates",
+                "url": "http://www.emirates.com"
+            },
+            "altitude": 380,
+            "altitudeChange": null,
+            "atcIdent": null,
+            "averageDelays": {
+                "departure": 1339,
+                "arrival": 1045
+            },
+            "blocked": false,
+            "blockedForUser": false,
+            "blockMessage": null,
+            "cabinInfo": {
+                "text": null,
+                "links": null
+            },
+            "cancelled": false,
+            "cockpitInformation": null,
+            "codeShare": {
+                "ident": "UAE5",
+                "displayIdent": "UAE5",
+                "iataIdent": "EK5",
+                "airline": {
+                    "fullName": "Emirates",
+                    "shortName": "Emirates",
+                    "icao": "UAE",
+                    "iata": "EK",
+                    "callsign": "Emirates",
+                    "url": "http://www.emirates.com"
+                },
+                "friendlyIdent": "Emirates 5",
+                "thumbnail": {
+                    "imageUrl": "https://e1.flightcdn.com/images/airline_logos/90p/UAE.png",
+                    "linkUrl": "/live/fleet/UAE"
+                },
+                "links": {
+                    "permanent": "/live/flight/UAE5/history/20220910/1155Z/OMDB/EGLL",
+                    "trackLog": "/live/flight/UAE5/history/20220910/1155Z/OMDB/EGLL/tracklog",
+                    "flightHistory": "/live/flight/UAE5/history",
+                    "buyFlightHistory": "/live/flight/UAE5/history/buy",
+                    "reportInaccuracies": "/live/report/UAE5/history/20220910/1155Z/OMDB/EGLL",
+                    "facebook": "https://facebook.com/sharer.php?u=https://uk.flightaware.com/live/flight/UAE5/history/20220910/1155Z/OMDB/EGLL",
+                    "twitter": "https://twitter.com/intent/tweet?url=https://uk.flightaware.com/live/flight/UAE5/history/20220910/1155Z/OMDB/EGLL&via=FlightAware"
+                }
+            },
+            "coord": null,
+            "destination": {
+                "TZ": ":Europe/London",
+                "isValidAirportCode": true,
+                "altIdent": "LHR",
+                "iata": "LHR",
+                "friendlyName": "London Heathrow",
+                "friendlyLocation": "London, United Kingdom",
+                "coord": [
+                    -0.4614,
+                    51.4775
+                ],
+                "isLatLon": false,
+                "icao": "EGLL",
+                "gate": null,
+                "terminal": null,
+                "delays": null
+            },
+            "displayIdent": "UAE5",
+            "distance": {
+                "elapsed": 1268,
+                "remaining": 1705,
+                "actual": null
+            },
+            "diverted": false,
+            "encryptedFlightId": "85af99e0bfadfc4c8aed057fed54c97eb07972af223adf605e2885117efec225",
+            "flightId": "UAE5-1662637620-schedule-0575:6",
+            "flightPlan": {
+                "speed": 415,
+                "altitude": null,
+                "route": "",
+                "directDistance": 2972,
+                "plannedDistance": null,
+                "departure": 1662810900,
+                "ete": 25260,
+                "fuelBurn": {
+                    "gallons": 34000,
+                    "pounds": 230000
+                }
+            },
+            "flightStatus": "airborne",
+            "fpasAvailable": false,
+            "friendlyIdent": "Emirates 5",
+            "fruOverride": false,
+            "ga": false,
+            "gateArrivalTimes": {
+                "scheduled": 1662837300,
+                "estimated": 1662838200,
+                "actual": null
+            },
+            "gateDepartureTimes": {
+                "scheduled": 1662810300,
+                "estimated": 1662810300,
+                "actual": 1662811320
+            },
+            "globalCandidate": false,
+            "globalIdent": false,
+            "globalFlightFeatures": false,
+            "globalLegSharing": false,
+            "globalServices": {},
+            "globalVisualizer": false,
+            "groundspeed": 432,
+            "heading": 294,
+            "hexid": null,
+            "historical": false,
+            "iataIdent": "EK5",
+            "icon": "heavy_4e",
+            "ident": "UAE5",
+            "inboundFlight": {
+                "flightId": "UAE764-1662484200-schedule-0853:0",
+                "linkUrl": "/live/flight/id/UAE764-1662484200-schedule-0853%3a0"
+            },
+            "internal": null,
+            "interregional": true,
+            "landingTimes": {
+                "scheduled": 1662836160,
+                "estimated": 1662837780,
+                "actual": null
+            },
+            "links": {
+                "operated": "/live/flight/UAE5/history/20220910/1155Z/OMDB/EGLL",
+                "registration": "/live/flight//history/20220910/1155Z/OMDB/EGLL",
+                "permanent": "/live/flight/UAE5/history/20220910/1155Z/OMDB/EGLL",
+                "trackLog": "/live/flight/UAE5/history/20220910/1155Z/OMDB/EGLL/tracklog",
+                "flightHistory": "/live/flight/UAE5/history",
+                "buyFlightHistory": "/live/flight/UAE5/history/buy",
+                "reportInaccuracies": "/live/report/UAE5/history/20220910/1155Z/OMDB/EGLL",
+                "facebook": "https://facebook.com/sharer.php?u=https://uk.flightaware.com/live/flight/UAE5/history/20220910/1155Z/OMDB/EGLL",
+                "twitter": "https://twitter.com/intent/tweet?url=https://uk.flightaware.com/live/flight/UAE5/history/20220910/1155Z/OMDB/EGLL&via=FlightAware"
+            },
+            "myAlerts": {
+                "editAlert": "",
+                "advancedAlert": "/account/manage/alerts/0/add?m_ident=UAE5;date_start=2022-09-10;date_end=2022-09-10"
+            },
+            "myFlightAware": null,
+            "origin": {
+                "TZ": ":Asia/Dubai",
+                "isValidAirportCode": true,
+                "altIdent": "DXB",
+                "iata": "DXB",
+                "friendlyName": "Dubai Int'l",
+                "friendlyLocation": "Dubai, United Arab Emirates",
+                "coord": [
+                    55.3643,
+                    25.255
+                ],
+                "isLatLon": false,
+                "icao": "OMDB",
+                "gate": null,
+                "terminal": null,
+                "delays": null
+            },
+            "poweredOff": null,
+            "poweredOn": null,
+            "predictedAvailable": false,
+            "predictedTimes": {
+                "out": null,
+                "off": null,
+                "on": null,
+                "in": null
+            },
+            "redactedBlockedTail": null,
+            "redactedCallsign": true,
+            "redactedTail": true,
+            "relatedThumbnails": [
+                {
+                    "thumbnail": "https://photos-e1.flightcdn.com/photos/retriever/f9c8d749650e376402c9e07d5e0bc20950c2f1f7",
+                    "target": "/photos/view/1005405-696d1b9c63c77c6b6d67ebccafeb5a06e44c927e"
+                },
+                {
+                    "thumbnail": "https://photos-e1.flightcdn.com/photos/retriever/daaba5be6e04782b8581bae6fe3b448af1a6c1b7",
+                    "target": "/photos/view/323248-64ddefb1f0113c73fc2d0f4132c545ed45031af3"
+                },
+                {
+                    "thumbnail": "https://photos-e1.flightcdn.com/photos/retriever/88875a5037546e2516fcffa46c199354a15889fe",
+                    "target": "/photos/view/3458561-cdb0c1eed140115498d8d86e071a1b534a3bc3c2"
+                },
+                {
+                    "thumbnail": "https://photos-e1.flightcdn.com/photos/retriever/92a3de4f51ab3af3400dc094ee370e4f9ccd7e91",
+                    "target": "/photos/view/12124712-82bd1cd98eba964f39ee6d12cf643f12d307c762"
+                },
+                {
+                    "thumbnail": "https://photos-e1.flightcdn.com/photos/retriever/4a55b7d7f288fee6b2ed4bfa4ffe16bb8f11701c",
+                    "target": "/photos/view/2104663-6900170327cd1d1264ec7ae66b5235d00b00eaba"
+                },
+                {
+                    "thumbnail": "https://photos-e1.flightcdn.com/photos/retriever/08352fadf0332cefb815b1f5ea79362ef5cf6688",
+                    "target": "/photos/view/3008590-00d59e8aaed423e4dce3f9f7adcddae7126efc1b"
+                },
+                {
+                    "thumbnail": "https://photos-e1.flightcdn.com/photos/retriever/6ff26f3b96f903053e60e6df72383e7a436a8812",
+                    "target": "/photos/view/12124712-e3d69f77552af731e6587cb576da23a3349ba7b6"
+                },
+                {
+                    "thumbnail": "https://photos-e1.flightcdn.com/photos/retriever/a3ee22563079fd1958eb21f8ba86d8bb0a8d9287",
+                    "target": "/photos/view/1005405-df86d647e63484ede3148e1ebdcaeb8f74aee0a3"
+                },
+                {
+                    "thumbnail": "https://photos-e1.flightcdn.com/photos/retriever/c1213d2d0d6e2402050bcd6eb1bb1ebf5c1d8ab3",
+                    "target": "/photos/view/2909199-4085dce76456c05c3513bf4db5f8d04355abb2d2"
+                },
+                {
+                    "thumbnail": "https://photos-e1.flightcdn.com/photos/retriever/ef1b5190f1ee5c92691955bcedeee3f32c9b9099",
+                    "target": "/photos/view/1005405-96957c3b413637aebac3bcc49eac50f0b8173d3c"
+                },
+                {
+                    "thumbnail": "https://photos-e1.flightcdn.com/photos/retriever/19d5df6146e63ecaeb9e5a63d9ebc05542b872ba",
+                    "target": "/photos/view/1005405-f81d4121759cc218101f7c7bdcd36c1ee863b2b7"
+                },
+                {
+                    "thumbnail": "https://photos-e1.flightcdn.com/photos/retriever/d8ec9c8aba5df4ff683be89951061835cf8f61d1",
+                    "target": "/photos/view/1005405-9951a420ebc625b6ab908c882b52474c610e4e10"
+                }
+            ],
+            "remarks": null,
+            "resultUnknown": false,
+            "roundedTimestamp": 1662823140,
+            "runways": {
+                "origin": null,
+                "destination": null
+            },
+            "speedInformation": null,
+            "showSurfaceTimes": false,
+            "surfaceTrackAvailable": null,
+            "takeoffTimes": {
+                "scheduled": 1662810900,
+                "estimated": 1662812460,
+                "actual": 1662812460
+            },
+            "taxiIn": null,
+            "taxiOut": null,
+            "thumbnail": {
+                "imageUrl": "https://e1.flightcdn.com/images/airline_logos/90p/UAE.png",
+                "linkUrl": "/live/fleet/UAE"
+            },
+            "timestamp": 1662823144,
+            "track": [
+                {
+                    "timestamp": 1662812474,
+                    "coord": [
+                        55.3554,
+                        25.2619
+                    ],
+                    "alt": 1,
+                    "gs": 167,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662812490,
+                    "coord": [
+                        55.3442,
+                        25.2678
+                    ],
+                    "alt": 5,
+                    "gs": 164,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662812507,
+                    "coord": [
+                        55.3313,
+                        25.2748
+                    ],
+                    "alt": 9,
+                    "gs": 167,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662812523,
+                    "coord": [
+                        55.3206,
+                        25.2808
+                    ],
+                    "alt": 12,
+                    "gs": 170,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662812539,
+                    "coord": [
+                        55.3087,
+                        25.2879
+                    ],
+                    "alt": 15,
+                    "gs": 181,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662812562,
+                    "coord": [
+                        55.2884,
+                        25.3
+                    ],
+                    "alt": 17,
+                    "gs": 207,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662812593,
+                    "coord": [
+                        55.2606,
+                        25.3179
+                    ],
+                    "alt": 20,
+                    "gs": 244,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662812623,
+                    "coord": [
+                        55.2273,
+                        25.3388
+                    ],
+                    "alt": 26,
+                    "gs": 270,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662812635,
+                    "coord": [
+                        55.2134,
+                        25.3469
+                    ],
+                    "alt": 30,
+                    "gs": 273,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662812645,
+                    "coord": [
+                        55.202,
+                        25.3526
+                    ],
+                    "alt": 33,
+                    "gs": 274,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662812652,
+                    "coord": [
+                        55.1932,
+                        25.3558
+                    ],
+                    "alt": 36,
+                    "gs": 275,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662812660,
+                    "coord": [
+                        55.1821,
+                        25.3573
+                    ],
+                    "alt": 39,
+                    "gs": 275,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662812672,
+                    "coord": [
+                        55.1636,
+                        25.3582
+                    ],
+                    "alt": 43,
+                    "gs": 276,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662812690,
+                    "coord": [
+                        55.1378,
+                        25.3583
+                    ],
+                    "alt": 50,
+                    "gs": 278,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662812721,
+                    "coord": [
+                        55.094,
+                        25.3563
+                    ],
+                    "alt": 59,
+                    "gs": 293,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662812752,
+                    "coord": [
+                        55.0459,
+                        25.354
+                    ],
+                    "alt": 64,
+                    "gs": 318,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662812768,
+                    "coord": [
+                        55.0201,
+                        25.3528
+                    ],
+                    "alt": 66,
+                    "gs": 333,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662812784,
+                    "coord": [
+                        54.9925,
+                        25.3516
+                    ],
+                    "alt": 68,
+                    "gs": 346,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662812814,
+                    "coord": [
+                        54.9376,
+                        25.3491
+                    ],
+                    "alt": 73,
+                    "gs": 364,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662812827,
+                    "coord": [
+                        54.9129,
+                        25.3512
+                    ],
+                    "alt": 77,
+                    "gs": 364,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662812843,
+                    "coord": [
+                        54.8838,
+                        25.3563
+                    ],
+                    "alt": 82,
+                    "gs": 365,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662812861,
+                    "coord": [
+                        54.8502,
+                        25.3645
+                    ],
+                    "alt": 88,
+                    "gs": 366,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662812892,
+                    "coord": [
+                        54.7968,
+                        25.38
+                    ],
+                    "alt": 96,
+                    "gs": 375,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662812939,
+                    "coord": [
+                        54.7102,
+                        25.4051
+                    ],
+                    "alt": 109,
+                    "gs": 385,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662812969,
+                    "coord": [
+                        54.6523,
+                        25.4215
+                    ],
+                    "alt": 117,
+                    "gs": 392,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662812999,
+                    "coord": [
+                        54.5958,
+                        25.4377
+                    ],
+                    "alt": 126,
+                    "gs": 393,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662813032,
+                    "coord": [
+                        54.5305,
+                        25.4571
+                    ],
+                    "alt": 134,
+                    "gs": 403,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662813062,
+                    "coord": [
+                        54.473,
+                        25.4743
+                    ],
+                    "alt": 143,
+                    "gs": 404,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662813092,
+                    "coord": [
+                        54.4147,
+                        25.4915
+                    ],
+                    "alt": 150,
+                    "gs": 405,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662813123,
+                    "coord": [
+                        54.3528,
+                        25.5097
+                    ],
+                    "alt": 159,
+                    "gs": 412,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662813154,
+                    "coord": [
+                        54.2871,
+                        25.5291
+                    ],
+                    "alt": 167,
+                    "gs": 415,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662813184,
+                    "coord": [
+                        54.2271,
+                        25.5467
+                    ],
+                    "alt": 175,
+                    "gs": 417,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662813216,
+                    "coord": [
+                        54.1621,
+                        25.5657
+                    ],
+                    "alt": 181,
+                    "gs": 424,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662813247,
+                    "coord": [
+                        54.0988,
+                        25.5843
+                    ],
+                    "alt": 187,
+                    "gs": 428,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662813277,
+                    "coord": [
+                        54.0369,
+                        25.6023
+                    ],
+                    "alt": 191,
+                    "gs": 420,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662813307,
+                    "coord": [
+                        53.9752,
+                        25.6199
+                    ],
+                    "alt": 202,
+                    "gs": 422,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662813339,
+                    "coord": [
+                        53.9112,
+                        25.6381
+                    ],
+                    "alt": 211,
+                    "gs": 427,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662813369,
+                    "coord": [
+                        53.846,
+                        25.6565
+                    ],
+                    "alt": 221,
+                    "gs": 428,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662813401,
+                    "coord": [
+                        53.78,
+                        25.6753
+                    ],
+                    "alt": 226,
+                    "gs": 441,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662813431,
+                    "coord": [
+                        53.7138,
+                        25.6941
+                    ],
+                    "alt": 233,
+                    "gs": 445,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662813461,
+                    "coord": [
+                        53.6491,
+                        25.7123
+                    ],
+                    "alt": 241,
+                    "gs": 446,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662813492,
+                    "coord": [
+                        53.5798,
+                        25.7318
+                    ],
+                    "alt": 247,
+                    "gs": 452,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662813522,
+                    "coord": [
+                        53.5123,
+                        25.7507
+                    ],
+                    "alt": 253,
+                    "gs": 458,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662813553,
+                    "coord": [
+                        53.4394,
+                        25.771
+                    ],
+                    "alt": 260,
+                    "gs": 462,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662813583,
+                    "coord": [
+                        53.3757,
+                        25.7889
+                    ],
+                    "alt": 266,
+                    "gs": 468,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662813614,
+                    "coord": [
+                        53.3017,
+                        25.8097
+                    ],
+                    "alt": 269,
+                    "gs": 481,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662813644,
+                    "coord": [
+                        53.2308,
+                        25.8295
+                    ],
+                    "alt": 271,
+                    "gs": 493,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662813661,
+                    "coord": [
+                        53.189,
+                        25.8434
+                    ],
+                    "alt": 274,
+                    "gs": 495,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662813680,
+                    "coord": [
+                        53.1453,
+                        25.8594
+                    ],
+                    "alt": 278,
+                    "gs": 495,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662813699,
+                    "coord": [
+                        53.0997,
+                        25.8774
+                    ],
+                    "alt": 283,
+                    "gs": 493,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662813732,
+                    "coord": [
+                        53.026,
+                        25.9074
+                    ],
+                    "alt": 291,
+                    "gs": 490,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662813763,
+                    "coord": [
+                        52.9552,
+                        25.9358
+                    ],
+                    "alt": 297,
+                    "gs": 494,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662813794,
+                    "coord": [
+                        52.881,
+                        25.9659
+                    ],
+                    "alt": 304,
+                    "gs": 492,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662813824,
+                    "coord": [
+                        52.8132,
+                        25.9933
+                    ],
+                    "alt": 312,
+                    "gs": 488,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662813855,
+                    "coord": [
+                        52.7445,
+                        26.021
+                    ],
+                    "alt": 318,
+                    "gs": 488,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662813887,
+                    "coord": [
+                        52.6721,
+                        26.0523
+                    ],
+                    "alt": 326,
+                    "gs": 482,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662813917,
+                    "coord": [
+                        52.6072,
+                        26.0826
+                    ],
+                    "alt": 332,
+                    "gs": 482,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662813947,
+                    "coord": [
+                        52.5403,
+                        26.1131
+                    ],
+                    "alt": 339,
+                    "gs": 479,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662813977,
+                    "coord": [
+                        52.4737,
+                        26.1431
+                    ],
+                    "alt": 344,
+                    "gs": 477,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662814007,
+                    "coord": [
+                        52.4106,
+                        26.1715
+                    ],
+                    "alt": 350,
+                    "gs": 475,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662814037,
+                    "coord": [
+                        52.343,
+                        26.202
+                    ],
+                    "alt": 354,
+                    "gs": 476,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662814068,
+                    "coord": [
+                        52.2726,
+                        26.2336
+                    ],
+                    "alt": 357,
+                    "gs": 481,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662814098,
+                    "coord": [
+                        52.206,
+                        26.2624
+                    ],
+                    "alt": 361,
+                    "gs": 480,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662814128,
+                    "coord": [
+                        52.1389,
+                        26.291
+                    ],
+                    "alt": 365,
+                    "gs": 480,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662814158,
+                    "coord": [
+                        52.0716,
+                        26.3201
+                    ],
+                    "alt": 368,
+                    "gs": 479,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662814189,
+                    "coord": [
+                        52.0059,
+                        26.3484
+                    ],
+                    "alt": 371,
+                    "gs": 480,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662814217,
+                    "coord": [
+                        51.9443,
+                        26.3746
+                    ],
+                    "alt": 372,
+                    "gs": 484,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662814236,
+                    "coord": [
+                        51.8955,
+                        26.3917
+                    ],
+                    "alt": 373,
+                    "gs": 486,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662814267,
+                    "coord": [
+                        51.8261,
+                        26.4146
+                    ],
+                    "alt": 375,
+                    "gs": 488,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662814298,
+                    "coord": [
+                        51.7533,
+                        26.4392
+                    ],
+                    "alt": 377,
+                    "gs": 490,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662814329,
+                    "coord": [
+                        51.6817,
+                        26.4633
+                    ],
+                    "alt": 380,
+                    "gs": 490,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662814360,
+                    "coord": [
+                        51.6064,
+                        26.4884
+                    ],
+                    "alt": 380,
+                    "gs": 490,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662814390,
+                    "coord": [
+                        51.5356,
+                        26.512
+                    ],
+                    "alt": 380,
+                    "gs": 488,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662814420,
+                    "coord": [
+                        51.4637,
+                        26.5359
+                    ],
+                    "alt": 380,
+                    "gs": 488,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662814451,
+                    "coord": [
+                        51.3922,
+                        26.5595
+                    ],
+                    "alt": 380,
+                    "gs": 487,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662814481,
+                    "coord": [
+                        51.32,
+                        26.5834
+                    ],
+                    "alt": 380,
+                    "gs": 487,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662814511,
+                    "coord": [
+                        51.25,
+                        26.6066
+                    ],
+                    "alt": 380,
+                    "gs": 488,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662814542,
+                    "coord": [
+                        51.1762,
+                        26.6311
+                    ],
+                    "alt": 380,
+                    "gs": 488,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662814573,
+                    "coord": [
+                        51.1016,
+                        26.6557
+                    ],
+                    "alt": 380,
+                    "gs": 488,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662814603,
+                    "coord": [
+                        51.0329,
+                        26.6784
+                    ],
+                    "alt": 380,
+                    "gs": 488,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662814633,
+                    "coord": [
+                        50.9622,
+                        26.7015
+                    ],
+                    "alt": 380,
+                    "gs": 488,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662814663,
+                    "coord": [
+                        50.8909,
+                        26.7242
+                    ],
+                    "alt": 380,
+                    "gs": 488,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662814694,
+                    "coord": [
+                        50.8131,
+                        26.7489
+                    ],
+                    "alt": 380,
+                    "gs": 489,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662814725,
+                    "coord": [
+                        50.7432,
+                        26.7716
+                    ],
+                    "alt": 380,
+                    "gs": 490,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662814746,
+                    "coord": [
+                        50.6917,
+                        26.7925
+                    ],
+                    "alt": 380,
+                    "gs": 492,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662814775,
+                    "coord": [
+                        50.632,
+                        26.8226
+                    ],
+                    "alt": 380,
+                    "gs": 493,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662814796,
+                    "coord": [
+                        50.5871,
+                        26.8495
+                    ],
+                    "alt": 380,
+                    "gs": 494,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662814827,
+                    "coord": [
+                        50.5226,
+                        26.8952
+                    ],
+                    "alt": 380,
+                    "gs": 493,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662814852,
+                    "coord": [
+                        50.4765,
+                        26.9301
+                    ],
+                    "alt": 380,
+                    "gs": 492,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662814885,
+                    "coord": [
+                        50.4137,
+                        26.9833
+                    ],
+                    "alt": 380,
+                    "gs": 490,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662814919,
+                    "coord": [
+                        50.3518,
+                        27.035
+                    ],
+                    "alt": 380,
+                    "gs": 488,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662814950,
+                    "coord": [
+                        50.2944,
+                        27.083
+                    ],
+                    "alt": 380,
+                    "gs": 488,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662814980,
+                    "coord": [
+                        50.2406,
+                        27.1274
+                    ],
+                    "alt": 380,
+                    "gs": 488,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662814995,
+                    "coord": [
+                        50.213,
+                        27.1536
+                    ],
+                    "alt": 380,
+                    "gs": 488,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662815010,
+                    "coord": [
+                        50.1869,
+                        27.1799
+                    ],
+                    "alt": 380,
+                    "gs": 489,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662815025,
+                    "coord": [
+                        50.1623,
+                        27.2063
+                    ],
+                    "alt": 380,
+                    "gs": 490,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662815061,
+                    "coord": [
+                        50.1088,
+                        27.2721
+                    ],
+                    "alt": 380,
+                    "gs": 487,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662815098,
+                    "coord": [
+                        50.0534,
+                        27.3384
+                    ],
+                    "alt": 380,
+                    "gs": 487,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662815128,
+                    "coord": [
+                        50.0072,
+                        27.3937
+                    ],
+                    "alt": 380,
+                    "gs": 486,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662815158,
+                    "coord": [
+                        49.9608,
+                        27.4459
+                    ],
+                    "alt": 380,
+                    "gs": 486,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662815188,
+                    "coord": [
+                        49.9126,
+                        27.4999
+                    ],
+                    "alt": 380,
+                    "gs": 486,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662815222,
+                    "coord": [
+                        49.8616,
+                        27.5576
+                    ],
+                    "alt": 380,
+                    "gs": 484,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662815252,
+                    "coord": [
+                        49.8149,
+                        27.6105
+                    ],
+                    "alt": 380,
+                    "gs": 484,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662815282,
+                    "coord": [
+                        49.7683,
+                        27.6633
+                    ],
+                    "alt": 380,
+                    "gs": 484,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662815315,
+                    "coord": [
+                        49.7148,
+                        27.7237
+                    ],
+                    "alt": 380,
+                    "gs": 484,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662815345,
+                    "coord": [
+                        49.6677,
+                        27.7768
+                    ],
+                    "alt": 380,
+                    "gs": 485,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662815379,
+                    "coord": [
+                        49.6138,
+                        27.8375
+                    ],
+                    "alt": 380,
+                    "gs": 484,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662815409,
+                    "coord": [
+                        49.5691,
+                        27.8874
+                    ],
+                    "alt": 380,
+                    "gs": 483,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662815440,
+                    "coord": [
+                        49.5193,
+                        27.9431
+                    ],
+                    "alt": 380,
+                    "gs": 482,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662815472,
+                    "coord": [
+                        49.4692,
+                        27.9991
+                    ],
+                    "alt": 380,
+                    "gs": 480,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662815502,
+                    "coord": [
+                        49.4222,
+                        28.0515
+                    ],
+                    "alt": 380,
+                    "gs": 479,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662815532,
+                    "coord": [
+                        49.3748,
+                        28.1034
+                    ],
+                    "alt": 380,
+                    "gs": 477,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662815562,
+                    "coord": [
+                        49.3273,
+                        28.1551
+                    ],
+                    "alt": 380,
+                    "gs": 475,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662815592,
+                    "coord": [
+                        49.2808,
+                        28.206
+                    ],
+                    "alt": 380,
+                    "gs": 474,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662815624,
+                    "coord": [
+                        49.2333,
+                        28.2578
+                    ],
+                    "alt": 380,
+                    "gs": 471,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662815654,
+                    "coord": [
+                        49.1867,
+                        28.3087
+                    ],
+                    "alt": 380,
+                    "gs": 471,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662815690,
+                    "coord": [
+                        49.1318,
+                        28.3685
+                    ],
+                    "alt": 380,
+                    "gs": 471,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662815710,
+                    "coord": [
+                        49.1005,
+                        28.4039
+                    ],
+                    "alt": 380,
+                    "gs": 472,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662815754,
+                    "coord": [
+                        49.0406,
+                        28.4824
+                    ],
+                    "alt": 380,
+                    "gs": 472,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662815784,
+                    "coord": [
+                        48.9971,
+                        28.5389
+                    ],
+                    "alt": 380,
+                    "gs": 473,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662815814,
+                    "coord": [
+                        48.9551,
+                        28.5934
+                    ],
+                    "alt": 380,
+                    "gs": 474,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662815844,
+                    "coord": [
+                        48.9142,
+                        28.6467
+                    ],
+                    "alt": 380,
+                    "gs": 475,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662815874,
+                    "coord": [
+                        48.8717,
+                        28.7019
+                    ],
+                    "alt": 380,
+                    "gs": 475,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662815905,
+                    "coord": [
+                        48.8285,
+                        28.7579
+                    ],
+                    "alt": 380,
+                    "gs": 477,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662815935,
+                    "coord": [
+                        48.7856,
+                        28.8135
+                    ],
+                    "alt": 380,
+                    "gs": 476,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662815965,
+                    "coord": [
+                        48.743,
+                        28.869
+                    ],
+                    "alt": 380,
+                    "gs": 476,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662815996,
+                    "coord": [
+                        48.7011,
+                        28.9238
+                    ],
+                    "alt": 380,
+                    "gs": 477,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662816026,
+                    "coord": [
+                        48.659,
+                        28.9787
+                    ],
+                    "alt": 380,
+                    "gs": 478,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662816056,
+                    "coord": [
+                        48.6158,
+                        29.0349
+                    ],
+                    "alt": 380,
+                    "gs": 480,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662816086,
+                    "coord": [
+                        48.5737,
+                        29.0895
+                    ],
+                    "alt": 380,
+                    "gs": 482,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662816116,
+                    "coord": [
+                        48.5305,
+                        29.1457
+                    ],
+                    "alt": 380,
+                    "gs": 483,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662816147,
+                    "coord": [
+                        48.4868,
+                        29.2023
+                    ],
+                    "alt": 380,
+                    "gs": 483,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662816177,
+                    "coord": [
+                        48.4434,
+                        29.2585
+                    ],
+                    "alt": 380,
+                    "gs": 482,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662816207,
+                    "coord": [
+                        48.4,
+                        29.3145
+                    ],
+                    "alt": 380,
+                    "gs": 481,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662816237,
+                    "coord": [
+                        48.357,
+                        29.3699
+                    ],
+                    "alt": 380,
+                    "gs": 480,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662816267,
+                    "coord": [
+                        48.3152,
+                        29.424
+                    ],
+                    "alt": 380,
+                    "gs": 480,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662816317,
+                    "coord": [
+                        48.2509,
+                        29.5199
+                    ],
+                    "alt": 380,
+                    "gs": 480,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662816348,
+                    "coord": [
+                        48.2101,
+                        29.5817
+                    ],
+                    "alt": 380,
+                    "gs": 480,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662816378,
+                    "coord": [
+                        48.1713,
+                        29.6403
+                    ],
+                    "alt": 380,
+                    "gs": 480,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662816408,
+                    "coord": [
+                        48.133,
+                        29.6983
+                    ],
+                    "alt": 380,
+                    "gs": 481,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662816438,
+                    "coord": [
+                        48.0946,
+                        29.7564
+                    ],
+                    "alt": 380,
+                    "gs": 481,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662816468,
+                    "coord": [
+                        48.0568,
+                        29.8135
+                    ],
+                    "alt": 380,
+                    "gs": 480,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662816499,
+                    "coord": [
+                        48.0179,
+                        29.8723
+                    ],
+                    "alt": 380,
+                    "gs": 479,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662816529,
+                    "coord": [
+                        47.9789,
+                        29.9309
+                    ],
+                    "alt": 380,
+                    "gs": 479,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662816547,
+                    "coord": [
+                        47.9545,
+                        29.9634
+                    ],
+                    "alt": 380,
+                    "gs": 478,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662816562,
+                    "coord": [
+                        47.9332,
+                        29.9899
+                    ],
+                    "alt": 380,
+                    "gs": 477,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662816574,
+                    "coord": [
+                        47.9149,
+                        30.0106
+                    ],
+                    "alt": 380,
+                    "gs": 476,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662816586,
+                    "coord": [
+                        47.8953,
+                        30.0304
+                    ],
+                    "alt": 380,
+                    "gs": 475,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662816601,
+                    "coord": [
+                        47.8698,
+                        30.0542
+                    ],
+                    "alt": 380,
+                    "gs": 475,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662816619,
+                    "coord": [
+                        47.8384,
+                        30.082
+                    ],
+                    "alt": 380,
+                    "gs": 474,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662816666,
+                    "coord": [
+                        47.7455,
+                        30.1514
+                    ],
+                    "alt": 380,
+                    "gs": 475,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662816696,
+                    "coord": [
+                        47.6884,
+                        30.1945
+                    ],
+                    "alt": 380,
+                    "gs": 475,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662816726,
+                    "coord": [
+                        47.6307,
+                        30.2377
+                    ],
+                    "alt": 380,
+                    "gs": 474,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662816757,
+                    "coord": [
+                        47.5722,
+                        30.2813
+                    ],
+                    "alt": 380,
+                    "gs": 472,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662816787,
+                    "coord": [
+                        47.5167,
+                        30.3226
+                    ],
+                    "alt": 380,
+                    "gs": 469,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662816817,
+                    "coord": [
+                        47.4577,
+                        30.3664
+                    ],
+                    "alt": 380,
+                    "gs": 467,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662816847,
+                    "coord": [
+                        47.4018,
+                        30.408
+                    ],
+                    "alt": 380,
+                    "gs": 465,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662816877,
+                    "coord": [
+                        47.3442,
+                        30.4507
+                    ],
+                    "alt": 380,
+                    "gs": 465,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662816908,
+                    "coord": [
+                        47.2867,
+                        30.4932
+                    ],
+                    "alt": 380,
+                    "gs": 465,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662816938,
+                    "coord": [
+                        47.2298,
+                        30.5354
+                    ],
+                    "alt": 380,
+                    "gs": 465,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662816958,
+                    "coord": [
+                        47.1967,
+                        30.5644
+                    ],
+                    "alt": 380,
+                    "gs": 466,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662816982,
+                    "coord": [
+                        47.1568,
+                        30.6027
+                    ],
+                    "alt": 380,
+                    "gs": 466,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662817010,
+                    "coord": [
+                        47.1102,
+                        30.6502
+                    ],
+                    "alt": 380,
+                    "gs": 466,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662817043,
+                    "coord": [
+                        47.0592,
+                        30.7045
+                    ],
+                    "alt": 380,
+                    "gs": 466,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662817081,
+                    "coord": [
+                        46.9973,
+                        30.7703
+                    ],
+                    "alt": 380,
+                    "gs": 467,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662817111,
+                    "coord": [
+                        46.95,
+                        30.8208
+                    ],
+                    "alt": 380,
+                    "gs": 469,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662817142,
+                    "coord": [
+                        46.9012,
+                        30.8727
+                    ],
+                    "alt": 380,
+                    "gs": 471,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662817172,
+                    "coord": [
+                        46.8534,
+                        30.9236
+                    ],
+                    "alt": 380,
+                    "gs": 472,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662817202,
+                    "coord": [
+                        46.8053,
+                        30.9747
+                    ],
+                    "alt": 380,
+                    "gs": 471,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662817234,
+                    "coord": [
+                        46.7559,
+                        31.0272
+                    ],
+                    "alt": 380,
+                    "gs": 471,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662817265,
+                    "coord": [
+                        46.7054,
+                        31.0806
+                    ],
+                    "alt": 380,
+                    "gs": 469,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662817295,
+                    "coord": [
+                        46.6571,
+                        31.1317
+                    ],
+                    "alt": 380,
+                    "gs": 468,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662817326,
+                    "coord": [
+                        46.6091,
+                        31.1824
+                    ],
+                    "alt": 380,
+                    "gs": 468,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662817356,
+                    "coord": [
+                        46.5615,
+                        31.2326
+                    ],
+                    "alt": 380,
+                    "gs": 467,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662817390,
+                    "coord": [
+                        46.5048,
+                        31.2923
+                    ],
+                    "alt": 380,
+                    "gs": 466,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662817426,
+                    "coord": [
+                        46.4491,
+                        31.351
+                    ],
+                    "alt": 380,
+                    "gs": 465,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662817468,
+                    "coord": [
+                        46.3827,
+                        31.4204
+                    ],
+                    "alt": 380,
+                    "gs": 466,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662817505,
+                    "coord": [
+                        46.325,
+                        31.4809
+                    ],
+                    "alt": 380,
+                    "gs": 465,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662817523,
+                    "coord": [
+                        46.2952,
+                        31.5121
+                    ],
+                    "alt": 380,
+                    "gs": 463,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662817577,
+                    "coord": [
+                        46.209,
+                        31.6021
+                    ],
+                    "alt": 380,
+                    "gs": 463,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662817608,
+                    "coord": [
+                        46.1606,
+                        31.6525
+                    ],
+                    "alt": 380,
+                    "gs": 462,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662817638,
+                    "coord": [
+                        46.1127,
+                        31.7025
+                    ],
+                    "alt": 380,
+                    "gs": 461,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662817668,
+                    "coord": [
+                        46.0657,
+                        31.7513
+                    ],
+                    "alt": 380,
+                    "gs": 461,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662817698,
+                    "coord": [
+                        46.0161,
+                        31.8021
+                    ],
+                    "alt": 380,
+                    "gs": 461,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662817728,
+                    "coord": [
+                        45.9678,
+                        31.8503
+                    ],
+                    "alt": 380,
+                    "gs": 460,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662817758,
+                    "coord": [
+                        45.9192,
+                        31.899
+                    ],
+                    "alt": 380,
+                    "gs": 459,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662817941,
+                    "coord": [
+                        45.6225,
+                        32.1964
+                    ],
+                    "alt": 380,
+                    "gs": 462,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662817979,
+                    "coord": [
+                        45.5616,
+                        32.257
+                    ],
+                    "alt": 380,
+                    "gs": 462,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662818015,
+                    "coord": [
+                        45.5021,
+                        32.3162
+                    ],
+                    "alt": 380,
+                    "gs": 462,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662818067,
+                    "coord": [
+                        45.4178,
+                        32.4
+                    ],
+                    "alt": 380,
+                    "gs": 460,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662818099,
+                    "coord": [
+                        45.3656,
+                        32.4516
+                    ],
+                    "alt": 380,
+                    "gs": 459,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662818129,
+                    "coord": [
+                        45.3155,
+                        32.5012
+                    ],
+                    "alt": 380,
+                    "gs": 458,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662818154,
+                    "coord": [
+                        45.2776,
+                        32.5412
+                    ],
+                    "alt": 380,
+                    "gs": 459,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662818175,
+                    "coord": [
+                        45.2453,
+                        32.5774
+                    ],
+                    "alt": 380,
+                    "gs": 460,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662818194,
+                    "coord": [
+                        45.2186,
+                        32.6097
+                    ],
+                    "alt": 380,
+                    "gs": 461,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662818210,
+                    "coord": [
+                        45.1967,
+                        32.6385
+                    ],
+                    "alt": 380,
+                    "gs": 462,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662818223,
+                    "coord": [
+                        45.1788,
+                        32.6641
+                    ],
+                    "alt": 380,
+                    "gs": 463,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662818236,
+                    "coord": [
+                        45.1649,
+                        32.6866
+                    ],
+                    "alt": 380,
+                    "gs": 465,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662818248,
+                    "coord": [
+                        45.1529,
+                        32.71
+                    ],
+                    "alt": 380,
+                    "gs": 466,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662818262,
+                    "coord": [
+                        45.1405,
+                        32.7385
+                    ],
+                    "alt": 380,
+                    "gs": 467,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662818278,
+                    "coord": [
+                        45.1278,
+                        32.772
+                    ],
+                    "alt": 380,
+                    "gs": 466,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662818349,
+                    "coord": [
+                        45.0709,
+                        32.9144
+                    ],
+                    "alt": 380,
+                    "gs": 460,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662818349,
+                    "coord": [
+                        45.0709,
+                        32.9144
+                    ],
+                    "alt": 380,
+                    "gs": 460,
+                    "type": "TP",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662818469,
+                    "coord": [
+                        44.9621,
+                        33.1888
+                    ],
+                    "alt": null,
+                    "gs": null,
+                    "type": "TP",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662818590,
+                    "coord": [
+                        44.8527,
+                        33.4631
+                    ],
+                    "alt": null,
+                    "gs": null,
+                    "type": "TP",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662818710,
+                    "coord": [
+                        44.7426,
+                        33.7374
+                    ],
+                    "alt": null,
+                    "gs": null,
+                    "type": "TP",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662818831,
+                    "coord": [
+                        44.6318,
+                        34.0115
+                    ],
+                    "alt": null,
+                    "gs": null,
+                    "type": "TP",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662818951,
+                    "coord": [
+                        44.5202,
+                        34.2855
+                    ],
+                    "alt": null,
+                    "gs": null,
+                    "type": "TP",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662819071,
+                    "coord": [
+                        44.408,
+                        34.5594
+                    ],
+                    "alt": null,
+                    "gs": null,
+                    "type": "TP",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662819192,
+                    "coord": [
+                        44.2949,
+                        34.8332
+                    ],
+                    "alt": null,
+                    "gs": null,
+                    "type": "TP",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662819312,
+                    "coord": [
+                        44.1812,
+                        35.107
+                    ],
+                    "alt": null,
+                    "gs": null,
+                    "type": "TP",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662819433,
+                    "coord": [
+                        44.0666,
+                        35.3806
+                    ],
+                    "alt": null,
+                    "gs": null,
+                    "type": "TP",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662819553,
+                    "coord": [
+                        43.9513,
+                        35.6541
+                    ],
+                    "alt": null,
+                    "gs": null,
+                    "type": "TP",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662819673,
+                    "coord": [
+                        43.8352,
+                        35.9274
+                    ],
+                    "alt": null,
+                    "gs": null,
+                    "type": "TP",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662819794,
+                    "coord": [
+                        43.7183,
+                        36.2007
+                    ],
+                    "alt": null,
+                    "gs": null,
+                    "type": "TP",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662819914,
+                    "coord": [
+                        43.6006,
+                        36.4739
+                    ],
+                    "alt": null,
+                    "gs": null,
+                    "type": "TP",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662820155,
+                    "coord": [
+                        43.5517,
+                        36.5868
+                    ],
+                    "alt": 380,
+                    "gs": 467,
+                    "type": "TP",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662820155,
+                    "coord": [
+                        43.5517,
+                        36.5868
+                    ],
+                    "alt": 380,
+                    "gs": 467,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662820185,
+                    "coord": [
+                        43.5247,
+                        36.6489
+                    ],
+                    "alt": 380,
+                    "gs": 466,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662820215,
+                    "coord": [
+                        43.4985,
+                        36.709
+                    ],
+                    "alt": 380,
+                    "gs": 466,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662820246,
+                    "coord": [
+                        43.4714,
+                        36.771
+                    ],
+                    "alt": 380,
+                    "gs": 464,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662820276,
+                    "coord": [
+                        43.4449,
+                        36.8315
+                    ],
+                    "alt": 380,
+                    "gs": 464,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662820306,
+                    "coord": [
+                        43.418,
+                        36.893
+                    ],
+                    "alt": 380,
+                    "gs": 464,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662820366,
+                    "coord": [
+                        43.3646,
+                        37.0145
+                    ],
+                    "alt": 380,
+                    "gs": 466,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662820396,
+                    "coord": [
+                        43.3378,
+                        37.0752
+                    ],
+                    "alt": 380,
+                    "gs": 464,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662820426,
+                    "coord": [
+                        43.3108,
+                        37.1364
+                    ],
+                    "alt": 380,
+                    "gs": 462,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662820448,
+                    "coord": [
+                        43.2866,
+                        37.1793
+                    ],
+                    "alt": 380,
+                    "gs": 458,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662820467,
+                    "coord": [
+                        43.2649,
+                        37.2143
+                    ],
+                    "alt": 380,
+                    "gs": 455,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662820482,
+                    "coord": [
+                        43.2457,
+                        37.2416
+                    ],
+                    "alt": 380,
+                    "gs": 453,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662820494,
+                    "coord": [
+                        43.228,
+                        37.2638
+                    ],
+                    "alt": 380,
+                    "gs": 451,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662820506,
+                    "coord": [
+                        43.2109,
+                        37.2836
+                    ],
+                    "alt": 380,
+                    "gs": 450,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662820516,
+                    "coord": [
+                        43.1945,
+                        37.3011
+                    ],
+                    "alt": 380,
+                    "gs": 449,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662820526,
+                    "coord": [
+                        43.1781,
+                        37.3171
+                    ],
+                    "alt": 380,
+                    "gs": 448,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662820536,
+                    "coord": [
+                        43.1611,
+                        37.3326
+                    ],
+                    "alt": 380,
+                    "gs": 447,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662820546,
+                    "coord": [
+                        43.1436,
+                        37.3474
+                    ],
+                    "alt": 380,
+                    "gs": 446,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662820556,
+                    "coord": [
+                        43.1254,
+                        37.3618
+                    ],
+                    "alt": 380,
+                    "gs": 445,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662820566,
+                    "coord": [
+                        43.1063,
+                        37.3759
+                    ],
+                    "alt": 380,
+                    "gs": 445,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662820577,
+                    "coord": [
+                        43.0863,
+                        37.3896
+                    ],
+                    "alt": 380,
+                    "gs": 444,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662820590,
+                    "coord": [
+                        43.0598,
+                        37.4057
+                    ],
+                    "alt": 380,
+                    "gs": 443,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662820608,
+                    "coord": [
+                        43.0212,
+                        37.4269
+                    ],
+                    "alt": 380,
+                    "gs": 442,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662820632,
+                    "coord": [
+                        42.9705,
+                        37.4534
+                    ],
+                    "alt": 380,
+                    "gs": 441,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662820680,
+                    "coord": [
+                        42.8616,
+                        37.4993
+                    ],
+                    "alt": 380,
+                    "gs": 439,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662820710,
+                    "coord": [
+                        42.7933,
+                        37.5283
+                    ],
+                    "alt": 380,
+                    "gs": 438,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662820748,
+                    "coord": [
+                        42.7077,
+                        37.5644
+                    ],
+                    "alt": 380,
+                    "gs": 438,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662820778,
+                    "coord": [
+                        42.6404,
+                        37.5926
+                    ],
+                    "alt": 380,
+                    "gs": 441,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662820808,
+                    "coord": [
+                        42.572,
+                        37.6212
+                    ],
+                    "alt": 380,
+                    "gs": 441,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662820852,
+                    "coord": [
+                        42.4714,
+                        37.6634
+                    ],
+                    "alt": 380,
+                    "gs": 440,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662820882,
+                    "coord": [
+                        42.4031,
+                        37.692
+                    ],
+                    "alt": 380,
+                    "gs": 438,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662820912,
+                    "coord": [
+                        42.3358,
+                        37.72
+                    ],
+                    "alt": 380,
+                    "gs": 439,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662820942,
+                    "coord": [
+                        42.27,
+                        37.7473
+                    ],
+                    "alt": 380,
+                    "gs": 441,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662821082,
+                    "coord": [
+                        41.9647,
+                        37.8977
+                    ],
+                    "alt": 380,
+                    "gs": 442,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662821177,
+                    "coord": [
+                        41.7612,
+                        38.0019
+                    ],
+                    "alt": 380,
+                    "gs": 442,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662821226,
+                    "coord": [
+                        41.6594,
+                        38.0598
+                    ],
+                    "alt": 380,
+                    "gs": 442,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662821286,
+                    "coord": [
+                        41.5414,
+                        38.1411
+                    ],
+                    "alt": 380,
+                    "gs": 444,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662821317,
+                    "coord": [
+                        41.4793,
+                        38.1839
+                    ],
+                    "alt": 380,
+                    "gs": 446,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662821347,
+                    "coord": [
+                        41.4207,
+                        38.2243
+                    ],
+                    "alt": 380,
+                    "gs": 447,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662821407,
+                    "coord": [
+                        41.3015,
+                        38.3059
+                    ],
+                    "alt": 380,
+                    "gs": 444,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662821438,
+                    "coord": [
+                        41.2421,
+                        38.3466
+                    ],
+                    "alt": 380,
+                    "gs": 442,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662821468,
+                    "coord": [
+                        41.1831,
+                        38.3869
+                    ],
+                    "alt": 380,
+                    "gs": 442,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662821498,
+                    "coord": [
+                        41.1237,
+                        38.4274
+                    ],
+                    "alt": 380,
+                    "gs": 443,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662821528,
+                    "coord": [
+                        41.0638,
+                        38.4681
+                    ],
+                    "alt": 380,
+                    "gs": 442,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662821558,
+                    "coord": [
+                        41.0044,
+                        38.5072
+                    ],
+                    "alt": 380,
+                    "gs": 442,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662821588,
+                    "coord": [
+                        40.9432,
+                        38.5466
+                    ],
+                    "alt": 380,
+                    "gs": 444,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662821618,
+                    "coord": [
+                        40.8842,
+                        38.5848
+                    ],
+                    "alt": 380,
+                    "gs": 444,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662821674,
+                    "coord": [
+                        40.7744,
+                        38.6564
+                    ],
+                    "alt": 380,
+                    "gs": 442,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662821704,
+                    "coord": [
+                        40.7138,
+                        38.6966
+                    ],
+                    "alt": 380,
+                    "gs": 441,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662821734,
+                    "coord": [
+                        40.6536,
+                        38.7363
+                    ],
+                    "alt": 380,
+                    "gs": 440,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662821764,
+                    "coord": [
+                        40.5931,
+                        38.7761
+                    ],
+                    "alt": 380,
+                    "gs": 442,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662821794,
+                    "coord": [
+                        40.5331,
+                        38.8153
+                    ],
+                    "alt": 380,
+                    "gs": 444,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662821824,
+                    "coord": [
+                        40.4723,
+                        38.8548
+                    ],
+                    "alt": 380,
+                    "gs": 445,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662821854,
+                    "coord": [
+                        40.4116,
+                        38.8944
+                    ],
+                    "alt": 380,
+                    "gs": 445,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662821885,
+                    "coord": [
+                        40.35,
+                        38.9343
+                    ],
+                    "alt": 380,
+                    "gs": 445,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662821915,
+                    "coord": [
+                        40.2893,
+                        38.9737
+                    ],
+                    "alt": 380,
+                    "gs": 445,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662821945,
+                    "coord": [
+                        40.2278,
+                        39.0134
+                    ],
+                    "alt": 380,
+                    "gs": 445,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662821975,
+                    "coord": [
+                        40.1669,
+                        39.0528
+                    ],
+                    "alt": 380,
+                    "gs": 445,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662822005,
+                    "coord": [
+                        40.1072,
+                        39.0912
+                    ],
+                    "alt": 380,
+                    "gs": 443,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662822035,
+                    "coord": [
+                        40.0447,
+                        39.1314
+                    ],
+                    "alt": 380,
+                    "gs": 443,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662822065,
+                    "coord": [
+                        39.9832,
+                        39.171
+                    ],
+                    "alt": 380,
+                    "gs": 444,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662822095,
+                    "coord": [
+                        39.9218,
+                        39.2104
+                    ],
+                    "alt": 380,
+                    "gs": 445,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662822126,
+                    "coord": [
+                        39.8604,
+                        39.2498
+                    ],
+                    "alt": 380,
+                    "gs": 443,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662822156,
+                    "coord": [
+                        39.7992,
+                        39.2888
+                    ],
+                    "alt": 380,
+                    "gs": 442,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662822186,
+                    "coord": [
+                        39.7385,
+                        39.3276
+                    ],
+                    "alt": 380,
+                    "gs": 441,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662822216,
+                    "coord": [
+                        39.6766,
+                        39.367
+                    ],
+                    "alt": 380,
+                    "gs": 441,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662822246,
+                    "coord": [
+                        39.6163,
+                        39.4055
+                    ],
+                    "alt": 380,
+                    "gs": 441,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662822273,
+                    "coord": [
+                        39.5587,
+                        39.4378
+                    ],
+                    "alt": 380,
+                    "gs": 440,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662822307,
+                    "coord": [
+                        39.4836,
+                        39.4726
+                    ],
+                    "alt": 380,
+                    "gs": 438,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662822347,
+                    "coord": [
+                        39.3912,
+                        39.51
+                    ],
+                    "alt": 380,
+                    "gs": 436,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662822377,
+                    "coord": [
+                        39.3237,
+                        39.5349
+                    ],
+                    "alt": 380,
+                    "gs": 436,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662822432,
+                    "coord": [
+                        39.1928,
+                        39.5819
+                    ],
+                    "alt": 380,
+                    "gs": 435,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662822492,
+                    "coord": [
+                        39.0498,
+                        39.6425
+                    ],
+                    "alt": 380,
+                    "gs": 434,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662822522,
+                    "coord": [
+                        38.9795,
+                        39.6722
+                    ],
+                    "alt": 380,
+                    "gs": 433,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662822552,
+                    "coord": [
+                        38.9084,
+                        39.6975
+                    ],
+                    "alt": 380,
+                    "gs": 430,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662822582,
+                    "coord": [
+                        38.8382,
+                        39.7225
+                    ],
+                    "alt": 380,
+                    "gs": 430,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662822612,
+                    "coord": [
+                        38.7677,
+                        39.7479
+                    ],
+                    "alt": 380,
+                    "gs": 430,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662822642,
+                    "coord": [
+                        38.6959,
+                        39.7737
+                    ],
+                    "alt": 380,
+                    "gs": 429,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662822672,
+                    "coord": [
+                        38.6263,
+                        39.7987
+                    ],
+                    "alt": 380,
+                    "gs": 429,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662822703,
+                    "coord": [
+                        38.5567,
+                        39.8236
+                    ],
+                    "alt": 380,
+                    "gs": 427,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662822733,
+                    "coord": [
+                        38.4865,
+                        39.8484
+                    ],
+                    "alt": 380,
+                    "gs": 428,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662822763,
+                    "coord": [
+                        38.4152,
+                        39.8736
+                    ],
+                    "alt": 380,
+                    "gs": 430,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662822793,
+                    "coord": [
+                        38.3446,
+                        39.8986
+                    ],
+                    "alt": 380,
+                    "gs": 431,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662822823,
+                    "coord": [
+                        38.2739,
+                        39.9234
+                    ],
+                    "alt": 380,
+                    "gs": 432,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662822853,
+                    "coord": [
+                        38.2039,
+                        39.9479
+                    ],
+                    "alt": 380,
+                    "gs": 432,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662822883,
+                    "coord": [
+                        38.1324,
+                        39.9729
+                    ],
+                    "alt": 380,
+                    "gs": 432,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662822913,
+                    "coord": [
+                        38.0601,
+                        39.9982
+                    ],
+                    "alt": 380,
+                    "gs": 433,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662822944,
+                    "coord": [
+                        37.9894,
+                        40.0228
+                    ],
+                    "alt": 380,
+                    "gs": 434,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662822992,
+                    "coord": [
+                        37.8754,
+                        40.0624
+                    ],
+                    "alt": 380,
+                    "gs": 433,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662823023,
+                    "coord": [
+                        37.798,
+                        40.0892
+                    ],
+                    "alt": 380,
+                    "gs": 432,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662823053,
+                    "coord": [
+                        37.7262,
+                        40.114
+                    ],
+                    "alt": 380,
+                    "gs": 431,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662823083,
+                    "coord": [
+                        37.655,
+                        40.1384
+                    ],
+                    "alt": 380,
+                    "gs": 431,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662823113,
+                    "coord": [
+                        37.5839,
+                        40.1629
+                    ],
+                    "alt": 380,
+                    "gs": 431,
+                    "type": "",
+                    "isolated": false
+                },
+                {
+                    "timestamp": 1662823144,
+                    "coord": [
+                        37.5118,
+                        40.1876
+                    ],
+                    "alt": 380,
+                    "gs": 432,
+                    "type": "",
+                    "isolated": false
+                }
+            ],
+            "updateType": "",
+            "usingShareUrl": false,
+            "waypoints": [],
+            "weather": null
+        }
+    }
+}
