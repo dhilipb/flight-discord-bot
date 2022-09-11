@@ -16,9 +16,8 @@ DiscordClient.on('ready', async () => {
     await TrackManager.trackToday();
     setInterval(async () => {
         await TrackManager.trackToday();
-    }, 60 * 3 * 1000);
+    }, (process.env.CHECK_FREQUENCY_MINS || 3) * 60 * 1000);
 });
-
 
 DiscordClient.on('interactionCreate', async (interaction) => {
     if (!interaction.isChatInputCommand()) return;
