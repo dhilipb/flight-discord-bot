@@ -75,7 +75,7 @@ const MessageGenerator = {
                     name: 'From',
                     value: [
                         `${flight.origin.friendlyLocation} (${flight.origin.iata}) ${getTerminal(flight.origin.terminal)}`,
-                        '-'.repeat(flight.origin.friendlyLocation.),
+                        '-'.repeat(20),
                         convertTZ(flight.gateDepartureTimes, flight.origin.TZ),
                         calculateDelay(flight.gateDepartureTimes)
                     ].join('\n')
