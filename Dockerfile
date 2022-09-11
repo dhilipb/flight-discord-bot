@@ -17,4 +17,8 @@ RUN npm install
 COPY . .
 
 EXPOSE 3000
+
+ENV BOT_TOKEN
+ENV BOT_CLIENT
+
 CMD [ "node", "index.js" ]
