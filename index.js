@@ -4,6 +4,11 @@ const { initBot } = require('./src/commands');
 const TrackManager = require('./src/track-manager');
 const DiscordClient = require('./src/discord-client');
 
+if (!process.env.BOT_TOKEN || process.env.BOT_CLIENT) {
+    console.error('BOT_TOKEN and BOT_CLIENT are required');
+    return;
+}
+
 DiscordClient.on('ready', async () => {
     initBot();
     console.log(`Logged in as ${DiscordClient.user.tag}!`);

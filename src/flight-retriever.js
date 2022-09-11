@@ -36,6 +36,16 @@ const FlightRetriever = {
             delete flight.activityLog;
             delete flight.track;
 
+            const mandatoryFields = [
+                flight.origin.iata,
+                flight.destination.iata
+            ];
+
+            if (mandatoryFields.some(field => !field)) {
+                console.error('One or other mandatory fields doesnt exist', mandatoryFields);
+                return null;
+            }
+
             return flight;
         }
 
