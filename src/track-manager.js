@@ -13,6 +13,18 @@ const TrackManager = {
             return;
         }
 
+        if (trackDate) {
+
+            const testDate = trackDate.includes('/') && /\d{1,2}\/\d{1,2}\/\d{4}/.test(trackDate);
+            if (!testDate) {
+                await interaction.reply(`Invalid date **${trackDate}**. Use format D/M/YYYY`);
+                return;
+            }
+            
+            // remove leading zeroes
+            trackDate = trackDate.replace(/^0/, '').replace(/\/0/, '/');
+        }
+
         const store = {
             channelId: interaction.channelId,
             guildId: interaction.guildId,
