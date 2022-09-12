@@ -1,1 +1,857 @@
-{}
+{
+    "EK2-12/9/2022": {
+        "channelId": "1019003328174248047",
+        "guildId": "1011545675370078268",
+        "replyId": "1019006963868258485",
+        "flight": {
+            "adhoc": false,
+            "adhocAvailable": false,
+            "aircraft": {
+                "type": "A388",
+                "lifeguard": false,
+                "heavy": false,
+                "tail": null,
+                "owner": null,
+                "ownerLocation": null,
+                "owner_type": null,
+                "canMessage": false,
+                "friendlyType": "Airbus A380-800 (quad-jet)",
+                "typeDetails": {
+                    "manufacturer": "Airbus",
+                    "model": "A380-800",
+                    "type": "quad-jet",
+                    "engCount": "4",
+                    "engType": "jet"
+                }
+            },
+            "aireonCandidate": false,
+            "airline": {
+                "fullName": "Emirates",
+                "shortName": "Emirates",
+                "icao": "UAE",
+                "iata": "EK",
+                "callsign": "Emirates",
+                "url": "http://www.emirates.com"
+            },
+            "altitude": null,
+            "altitudeChange": null,
+            "atcIdent": null,
+            "averageDelays": {
+                "departure": 1383,
+                "arrival": 655
+            },
+            "blocked": false,
+            "blockedForUser": false,
+            "blockMessage": null,
+            "cabinInfo": {
+                "text": null,
+                "links": null
+            },
+            "cancelled": false,
+            "cockpitInformation": null,
+            "codeShare": {
+                "ident": "UAE2",
+                "displayIdent": "UAE2",
+                "iataIdent": "EK2",
+                "airline": {
+                    "fullName": "Emirates",
+                    "shortName": "Emirates",
+                    "icao": "UAE",
+                    "iata": "EK",
+                    "callsign": "Emirates",
+                    "url": "http://www.emirates.com"
+                },
+                "friendlyIdent": "Emirates 2",
+                "thumbnail": {
+                    "imageUrl": "https://e1.flightcdn.com/images/airline_logos/90p/UAE.png",
+                    "linkUrl": "/live/fleet/UAE"
+                },
+                "links": {
+                    "permanent": "/live/flight/UAE2/history/20220912/1330Z/EGLL/OMDB",
+                    "trackLog": "/live/flight/UAE2/history/20220912/1330Z/EGLL/OMDB/tracklog",
+                    "flightHistory": "/live/flight/UAE2/history",
+                    "buyFlightHistory": "/live/flight/UAE2/history/buy",
+                    "reportInaccuracies": "/live/report/UAE2/history/20220912/1330Z/EGLL/OMDB",
+                    "facebook": "https://facebook.com/sharer.php?u=https://uk.flightaware.com/live/flight/UAE2/history/20220912/1330Z/EGLL/OMDB",
+                    "twitter": "https://twitter.com/intent/tweet?url=https://uk.flightaware.com/live/flight/UAE2/history/20220912/1330Z/EGLL/OMDB&via=FlightAware"
+                }
+            },
+            "coord": null,
+            "destination": {
+                "TZ": ":Asia/Dubai",
+                "isValidAirportCode": true,
+                "altIdent": "DXB",
+                "iata": "DXB",
+                "friendlyName": "Dubai Int'l",
+                "friendlyLocation": "Dubai, United Arab Emirates",
+                "coord": [
+                    55.3643,
+                    25.255
+                ],
+                "isLatLon": false,
+                "icao": "OMDB",
+                "gate": null,
+                "terminal": "3",
+                "delays": null
+            },
+            "displayIdent": "UAE2",
+            "distance": {
+                "elapsed": 2974,
+                "remaining": 2,
+                "actual": 3121
+            },
+            "diverted": false,
+            "encryptedFlightId": "9494df39b4de76dfc3f4b00380cef294b07972af223adf6076377c6b2aa1bf03",
+            "flightId": "UAE2-1662816060-schedule-0292:6",
+            "flightPlan": {
+                "speed": 446,
+                "altitude": null,
+                "route": "",
+                "directDistance": 2972,
+                "plannedDistance": null,
+                "departure": 1662989400,
+                "ete": 23220,
+                "fuelBurn": {
+                    "gallons": 34000,
+                    "pounds": 230000
+                }
+            },
+            "flightStatus": "arrived",
+            "fpasAvailable": false,
+            "friendlyIdent": "Emirates 2",
+            "fruOverride": false,
+            "ga": false,
+            "gateArrivalTimes": {
+                "scheduled": 1663014000,
+                "estimated": 1663018380,
+                "actual": 1663018200
+            },
+            "gateDepartureTimes": {
+                "scheduled": 1662988800,
+                "estimated": 1662988800,
+                "actual": 1662994200
+            },
+            "globalCandidate": false,
+            "globalIdent": false,
+            "globalFlightFeatures": false,
+            "globalLegSharing": false,
+            "globalServices": {},
+            "globalVisualizer": false,
+            "groundspeed": null,
+            "heading": null,
+            "hexid": null,
+            "historical": false,
+            "iataIdent": "EK2",
+            "icon": "heavy_4e",
+            "ident": "UAE2",
+            "inboundFlight": {
+                "flightId": "UAE1-1662782160-schedule-0150:6",
+                "linkUrl": "/live/flight/id/UAE1-1662782160-schedule-0150%3a6"
+            },
+            "internal": null,
+            "interregional": true,
+            "landingTimes": {
+                "scheduled": 1663012620,
+                "estimated": 1663017780,
+                "actual": 1663017780
+            },
+            "links": {
+                "operated": "/live/flight/UAE2/history/20220912/1330Z/EGLL/OMDB",
+                "registration": "/live/flight//history/20220912/1330Z/EGLL/OMDB",
+                "permanent": "/live/flight/UAE2/history/20220912/1330Z/EGLL/OMDB",
+                "trackLog": "/live/flight/UAE2/history/20220912/1330Z/EGLL/OMDB/tracklog",
+                "flightHistory": "/live/flight/UAE2/history",
+                "buyFlightHistory": "/live/flight/UAE2/history/buy",
+                "reportInaccuracies": "/live/report/UAE2/history/20220912/1330Z/EGLL/OMDB",
+                "facebook": "https://facebook.com/sharer.php?u=https://uk.flightaware.com/live/flight/UAE2/history/20220912/1330Z/EGLL/OMDB",
+                "twitter": "https://twitter.com/intent/tweet?url=https://uk.flightaware.com/live/flight/UAE2/history/20220912/1330Z/EGLL/OMDB&via=FlightAware"
+            },
+            "myAlerts": {
+                "editAlert": "",
+                "advancedAlert": "/account/manage/alerts/0/add?m_ident=UAE2;date_start=2022-09-12;date_end=2022-09-12"
+            },
+            "myFlightAware": null,
+            "origin": {
+                "TZ": ":Europe/London",
+                "isValidAirportCode": true,
+                "altIdent": "LHR",
+                "iata": "LHR",
+                "friendlyName": "London Heathrow",
+                "friendlyLocation": "London, United Kingdom",
+                "coord": [
+                    -0.4614,
+                    51.4775
+                ],
+                "isLatLon": false,
+                "icao": "EGLL",
+                "gate": "7",
+                "terminal": "3",
+                "delays": [
+                    {
+                        "type": "arrival delays for airborne aircraft",
+                        "time": "an average of 32 minutes",
+                        "reason": null
+                    }
+                ]
+            },
+            "poweredOff": null,
+            "poweredOn": null,
+            "predictedAvailable": false,
+            "predictedTimes": {
+                "out": null,
+                "off": null,
+                "on": null,
+                "in": null
+            },
+            "redactedBlockedTail": null,
+            "redactedCallsign": null,
+            "redactedTail": true,
+            "relatedThumbnails": [
+                {
+                    "thumbnail": "https://photos-e1.flightcdn.com/photos/retriever/f9c8d749650e376402c9e07d5e0bc20950c2f1f7",
+                    "target": "/photos/view/1005405-696d1b9c63c77c6b6d67ebccafeb5a06e44c927e"
+                },
+                {
+                    "thumbnail": "https://photos-e1.flightcdn.com/photos/retriever/daaba5be6e04782b8581bae6fe3b448af1a6c1b7",
+                    "target": "/photos/view/323248-64ddefb1f0113c73fc2d0f4132c545ed45031af3"
+                },
+                {
+                    "thumbnail": "https://photos-e1.flightcdn.com/photos/retriever/88875a5037546e2516fcffa46c199354a15889fe",
+                    "target": "/photos/view/3458561-cdb0c1eed140115498d8d86e071a1b534a3bc3c2"
+                },
+                {
+                    "thumbnail": "https://photos-e1.flightcdn.com/photos/retriever/92a3de4f51ab3af3400dc094ee370e4f9ccd7e91",
+                    "target": "/photos/view/12124712-82bd1cd98eba964f39ee6d12cf643f12d307c762"
+                },
+                {
+                    "thumbnail": "https://photos-e1.flightcdn.com/photos/retriever/4a55b7d7f288fee6b2ed4bfa4ffe16bb8f11701c",
+                    "target": "/photos/view/2104663-6900170327cd1d1264ec7ae66b5235d00b00eaba"
+                },
+                {
+                    "thumbnail": "https://photos-e1.flightcdn.com/photos/retriever/08352fadf0332cefb815b1f5ea79362ef5cf6688",
+                    "target": "/photos/view/3008590-00d59e8aaed423e4dce3f9f7adcddae7126efc1b"
+                },
+                {
+                    "thumbnail": "https://photos-e1.flightcdn.com/photos/retriever/6ff26f3b96f903053e60e6df72383e7a436a8812",
+                    "target": "/photos/view/12124712-e3d69f77552af731e6587cb576da23a3349ba7b6"
+                },
+                {
+                    "thumbnail": "https://photos-e1.flightcdn.com/photos/retriever/a3ee22563079fd1958eb21f8ba86d8bb0a8d9287",
+                    "target": "/photos/view/1005405-df86d647e63484ede3148e1ebdcaeb8f74aee0a3"
+                },
+                {
+                    "thumbnail": "https://photos-e1.flightcdn.com/photos/retriever/c1213d2d0d6e2402050bcd6eb1bb1ebf5c1d8ab3",
+                    "target": "/photos/view/2909199-4085dce76456c05c3513bf4db5f8d04355abb2d2"
+                },
+                {
+                    "thumbnail": "https://photos-e1.flightcdn.com/photos/retriever/ef1b5190f1ee5c92691955bcedeee3f32c9b9099",
+                    "target": "/photos/view/1005405-96957c3b413637aebac3bcc49eac50f0b8173d3c"
+                },
+                {
+                    "thumbnail": "https://photos-e1.flightcdn.com/photos/retriever/19d5df6146e63ecaeb9e5a63d9ebc05542b872ba",
+                    "target": "/photos/view/1005405-f81d4121759cc218101f7c7bdcd36c1ee863b2b7"
+                },
+                {
+                    "thumbnail": "https://photos-e1.flightcdn.com/photos/retriever/d8ec9c8aba5df4ff683be89951061835cf8f61d1",
+                    "target": "/photos/view/1005405-9951a420ebc625b6ab908c882b52474c610e4e10"
+                }
+            ],
+            "remarks": null,
+            "resultUnknown": false,
+            "roundedTimestamp": 1663018140,
+            "runways": {
+                "origin": null,
+                "destination": null
+            },
+            "speedInformation": null,
+            "showSurfaceTimes": false,
+            "surfaceTrackAvailable": null,
+            "takeoffTimes": {
+                "scheduled": 1662989400,
+                "estimated": 1662995280,
+                "actual": 1662995100
+            },
+            "taxiIn": null,
+            "taxiOut": null,
+            "thumbnail": {
+                "imageUrl": "https://e1.flightcdn.com/images/airline_logos/90p/UAE.png",
+                "linkUrl": "/live/fleet/UAE"
+            },
+            "timestamp": 1663018196,
+            "updateType": "",
+            "usingShareUrl": false,
+            "waypoints": [],
+            "weather": null
+        },
+        "trackTail": "EK2",
+        "trackDate": "12/9/2022"
+    },
+    "EK4-12/9/2022": {
+        "channelId": "1019003328174248047",
+        "guildId": "1011545675370078268",
+        "replyId": "1019013026860511272",
+        "flight": {
+            "adhoc": false,
+            "adhocAvailable": false,
+            "aircraft": {
+                "type": "A388",
+                "lifeguard": false,
+                "heavy": false,
+                "tail": null,
+                "owner": null,
+                "ownerLocation": null,
+                "owner_type": null,
+                "canMessage": false,
+                "friendlyType": "Airbus A380-800 (quad-jet)",
+                "typeDetails": {
+                    "manufacturer": "Airbus",
+                    "model": "A380-800",
+                    "type": "quad-jet",
+                    "engCount": "4",
+                    "engType": "jet"
+                }
+            },
+            "aireonCandidate": false,
+            "airline": {
+                "fullName": "Emirates",
+                "shortName": "Emirates",
+                "icao": "UAE",
+                "iata": "EK",
+                "callsign": "Emirates",
+                "url": "http://www.emirates.com"
+            },
+            "altitude": 390,
+            "altitudeChange": null,
+            "atcIdent": null,
+            "averageDelays": {
+                "departure": 2164,
+                "arrival": 1594
+            },
+            "blocked": false,
+            "blockedForUser": false,
+            "blockMessage": null,
+            "cabinInfo": {
+                "text": null,
+                "links": null
+            },
+            "cancelled": false,
+            "cockpitInformation": null,
+            "codeShare": {
+                "ident": "UAE4",
+                "displayIdent": "UAE4",
+                "iataIdent": "EK4",
+                "airline": {
+                    "fullName": "Emirates",
+                    "shortName": "Emirates",
+                    "icao": "UAE",
+                    "iata": "EK",
+                    "callsign": "Emirates",
+                    "url": "http://www.emirates.com"
+                },
+                "friendlyIdent": "Emirates 4",
+                "thumbnail": {
+                    "imageUrl": "https://e1.flightcdn.com/images/airline_logos/90p/UAE.png",
+                    "linkUrl": "/live/fleet/UAE"
+                },
+                "links": {
+                    "permanent": "/live/flight/UAE4/history/20220912/1950Z/EGLL/OMDB",
+                    "trackLog": "/live/flight/UAE4/history/20220912/1950Z/EGLL/OMDB/tracklog",
+                    "flightHistory": "/live/flight/UAE4/history",
+                    "buyFlightHistory": "/live/flight/UAE4/history/buy",
+                    "reportInaccuracies": "/live/report/UAE4/history/20220912/1950Z/EGLL/OMDB",
+                    "facebook": "https://facebook.com/sharer.php?u=https://uk.flightaware.com/live/flight/UAE4/history/20220912/1950Z/EGLL/OMDB",
+                    "twitter": "https://twitter.com/intent/tweet?url=https://uk.flightaware.com/live/flight/UAE4/history/20220912/1950Z/EGLL/OMDB&via=FlightAware"
+                }
+            },
+            "coord": null,
+            "destination": {
+                "TZ": ":Asia/Dubai",
+                "isValidAirportCode": true,
+                "altIdent": "DXB",
+                "iata": "DXB",
+                "friendlyName": "Dubai Int'l",
+                "friendlyLocation": "Dubai, United Arab Emirates",
+                "coord": [
+                    55.3643,
+                    25.255
+                ],
+                "isLatLon": false,
+                "icao": "OMDB",
+                "gate": null,
+                "terminal": "3",
+                "delays": null
+            },
+            "displayIdent": "UAE4",
+            "distance": {
+                "elapsed": 1243,
+                "remaining": 1730,
+                "actual": null
+            },
+            "diverted": false,
+            "encryptedFlightId": "de7582587d0ab2712560451e7ff4ea7db07972af223adf601d52f403ad6cef95",
+            "flightId": "UAE4-1662839340-schedule-0553:6",
+            "flightPlan": {
+                "speed": 452,
+                "altitude": null,
+                "route": "",
+                "directDistance": 2972,
+                "plannedDistance": null,
+                "departure": 1663012200,
+                "ete": 23160,
+                "fuelBurn": {
+                    "gallons": 34000,
+                    "pounds": 230000
+                }
+            },
+            "flightStatus": "airborne",
+            "fpasAvailable": false,
+            "friendlyIdent": "Emirates 4",
+            "fruOverride": false,
+            "ga": false,
+            "gateArrivalTimes": {
+                "scheduled": 1663036500,
+                "estimated": 1663036440,
+                "actual": null
+            },
+            "gateDepartureTimes": {
+                "scheduled": 1663011600,
+                "estimated": 1663011600,
+                "actual": 1663011960
+            },
+            "globalCandidate": false,
+            "globalIdent": false,
+            "globalFlightFeatures": false,
+            "globalLegSharing": false,
+            "globalServices": {},
+            "globalVisualizer": false,
+            "groundspeed": 527,
+            "heading": 122,
+            "hexid": null,
+            "historical": false,
+            "iataIdent": "EK4",
+            "icon": "heavy_4e",
+            "ident": "UAE4",
+            "inboundFlight": {
+                "flightId": "UAE3-1662805440-schedule-0465:6",
+                "linkUrl": "/live/flight/id/UAE3-1662805440-schedule-0465%3a6"
+            },
+            "internal": null,
+            "interregional": true,
+            "landingTimes": {
+                "scheduled": 1663035360,
+                "estimated": 1663036080,
+                "actual": null
+            },
+            "links": {
+                "operated": "/live/flight/UAE4/history/20220912/1950Z/EGLL/OMDB",
+                "registration": "/live/flight//history/20220912/1950Z/EGLL/OMDB",
+                "permanent": "/live/flight/UAE4/history/20220912/1950Z/EGLL/OMDB",
+                "trackLog": "/live/flight/UAE4/history/20220912/1950Z/EGLL/OMDB/tracklog",
+                "flightHistory": "/live/flight/UAE4/history",
+                "buyFlightHistory": "/live/flight/UAE4/history/buy",
+                "reportInaccuracies": "/live/report/UAE4/history/20220912/1950Z/EGLL/OMDB",
+                "facebook": "https://facebook.com/sharer.php?u=https://uk.flightaware.com/live/flight/UAE4/history/20220912/1950Z/EGLL/OMDB",
+                "twitter": "https://twitter.com/intent/tweet?url=https://uk.flightaware.com/live/flight/UAE4/history/20220912/1950Z/EGLL/OMDB&via=FlightAware"
+            },
+            "myAlerts": {
+                "editAlert": "",
+                "advancedAlert": "/account/manage/alerts/0/add?m_ident=UAE4;date_start=2022-09-12;date_end=2022-09-12"
+            },
+            "myFlightAware": null,
+            "origin": {
+                "TZ": ":Europe/London",
+                "isValidAirportCode": true,
+                "altIdent": "LHR",
+                "iata": "LHR",
+                "friendlyName": "London Heathrow",
+                "friendlyLocation": "London, United Kingdom",
+                "coord": [
+                    -0.4614,
+                    51.4775
+                ],
+                "isLatLon": false,
+                "icao": "EGLL",
+                "gate": "5",
+                "terminal": "3",
+                "delays": [
+                    {
+                        "type": "arrival delays for airborne aircraft",
+                        "time": "an average of 32 minutes",
+                        "reason": null
+                    }
+                ]
+            },
+            "poweredOff": null,
+            "poweredOn": null,
+            "predictedAvailable": false,
+            "predictedTimes": {
+                "out": null,
+                "off": null,
+                "on": null,
+                "in": null
+            },
+            "redactedBlockedTail": null,
+            "redactedCallsign": true,
+            "redactedTail": true,
+            "relatedThumbnails": [
+                {
+                    "thumbnail": "https://photos-e1.flightcdn.com/photos/retriever/f9c8d749650e376402c9e07d5e0bc20950c2f1f7",
+                    "target": "/photos/view/1005405-696d1b9c63c77c6b6d67ebccafeb5a06e44c927e"
+                },
+                {
+                    "thumbnail": "https://photos-e1.flightcdn.com/photos/retriever/daaba5be6e04782b8581bae6fe3b448af1a6c1b7",
+                    "target": "/photos/view/323248-64ddefb1f0113c73fc2d0f4132c545ed45031af3"
+                },
+                {
+                    "thumbnail": "https://photos-e1.flightcdn.com/photos/retriever/88875a5037546e2516fcffa46c199354a15889fe",
+                    "target": "/photos/view/3458561-cdb0c1eed140115498d8d86e071a1b534a3bc3c2"
+                },
+                {
+                    "thumbnail": "https://photos-e1.flightcdn.com/photos/retriever/92a3de4f51ab3af3400dc094ee370e4f9ccd7e91",
+                    "target": "/photos/view/12124712-82bd1cd98eba964f39ee6d12cf643f12d307c762"
+                },
+                {
+                    "thumbnail": "https://photos-e1.flightcdn.com/photos/retriever/4a55b7d7f288fee6b2ed4bfa4ffe16bb8f11701c",
+                    "target": "/photos/view/2104663-6900170327cd1d1264ec7ae66b5235d00b00eaba"
+                },
+                {
+                    "thumbnail": "https://photos-e1.flightcdn.com/photos/retriever/08352fadf0332cefb815b1f5ea79362ef5cf6688",
+                    "target": "/photos/view/3008590-00d59e8aaed423e4dce3f9f7adcddae7126efc1b"
+                },
+                {
+                    "thumbnail": "https://photos-e1.flightcdn.com/photos/retriever/6ff26f3b96f903053e60e6df72383e7a436a8812",
+                    "target": "/photos/view/12124712-e3d69f77552af731e6587cb576da23a3349ba7b6"
+                },
+                {
+                    "thumbnail": "https://photos-e1.flightcdn.com/photos/retriever/a3ee22563079fd1958eb21f8ba86d8bb0a8d9287",
+                    "target": "/photos/view/1005405-df86d647e63484ede3148e1ebdcaeb8f74aee0a3"
+                },
+                {
+                    "thumbnail": "https://photos-e1.flightcdn.com/photos/retriever/c1213d2d0d6e2402050bcd6eb1bb1ebf5c1d8ab3",
+                    "target": "/photos/view/2909199-4085dce76456c05c3513bf4db5f8d04355abb2d2"
+                },
+                {
+                    "thumbnail": "https://photos-e1.flightcdn.com/photos/retriever/ef1b5190f1ee5c92691955bcedeee3f32c9b9099",
+                    "target": "/photos/view/1005405-96957c3b413637aebac3bcc49eac50f0b8173d3c"
+                },
+                {
+                    "thumbnail": "https://photos-e1.flightcdn.com/photos/retriever/19d5df6146e63ecaeb9e5a63d9ebc05542b872ba",
+                    "target": "/photos/view/1005405-f81d4121759cc218101f7c7bdcd36c1ee863b2b7"
+                },
+                {
+                    "thumbnail": "https://photos-e1.flightcdn.com/photos/retriever/d8ec9c8aba5df4ff683be89951061835cf8f61d1",
+                    "target": "/photos/view/1005405-9951a420ebc625b6ab908c882b52474c610e4e10"
+                }
+            ],
+            "remarks": null,
+            "resultUnknown": false,
+            "roundedTimestamp": 1663022160,
+            "runways": {
+                "origin": null,
+                "destination": null
+            },
+            "speedInformation": null,
+            "showSurfaceTimes": false,
+            "surfaceTrackAvailable": null,
+            "takeoffTimes": {
+                "scheduled": 1663012200,
+                "estimated": 1663013040,
+                "actual": 1663013100
+            },
+            "taxiIn": null,
+            "taxiOut": null,
+            "thumbnail": {
+                "imageUrl": "https://e1.flightcdn.com/images/airline_logos/90p/UAE.png",
+                "linkUrl": "/live/fleet/UAE"
+            },
+            "timestamp": 1663022176,
+            "updateType": "",
+            "usingShareUrl": false,
+            "waypoints": [],
+            "weather": null
+        },
+        "trackTail": "EK4",
+        "trackDate": "12/9/2022"
+    },
+    "EK3-12/9/2022": {
+        "channelId": "1019003328174248047",
+        "guildId": "1011545675370078268",
+        "replyId": "1019013150386950195",
+        "flight": {
+            "adhoc": false,
+            "adhocAvailable": false,
+            "aircraft": {
+                "type": "A388",
+                "lifeguard": false,
+                "heavy": false,
+                "tail": null,
+                "owner": null,
+                "ownerLocation": null,
+                "owner_type": null,
+                "canMessage": false,
+                "friendlyType": "Airbus A380-800 (quad-jet)",
+                "typeDetails": {
+                    "manufacturer": "Airbus",
+                    "model": "A380-800",
+                    "type": "quad-jet",
+                    "engCount": "4",
+                    "engType": "jet"
+                }
+            },
+            "aireonCandidate": false,
+            "airline": {
+                "fullName": "Emirates",
+                "shortName": "Emirates",
+                "icao": "UAE",
+                "iata": "EK",
+                "callsign": "Emirates",
+                "url": "http://www.emirates.com"
+            },
+            "altitude": null,
+            "altitudeChange": null,
+            "atcIdent": null,
+            "averageDelays": {
+                "departure": 1239,
+                "arrival": 1307
+            },
+            "blocked": false,
+            "blockedForUser": false,
+            "blockMessage": null,
+            "cabinInfo": {
+                "text": null,
+                "links": null
+            },
+            "cancelled": false,
+            "cockpitInformation": null,
+            "codeShare": {
+                "ident": "UAE3",
+                "displayIdent": "UAE3",
+                "iataIdent": "EK3",
+                "airline": {
+                    "fullName": "Emirates",
+                    "shortName": "Emirates",
+                    "icao": "UAE",
+                    "iata": "EK",
+                    "callsign": "Emirates",
+                    "url": "http://www.emirates.com"
+                },
+                "friendlyIdent": "Emirates 3",
+                "thumbnail": {
+                    "imageUrl": "https://e0.flightcdn.com/images/airline_logos/90p/QFA.png",
+                    "linkUrl": "/live/fleet/QFA"
+                },
+                "links": {
+                    "permanent": "/live/flight/UAE3/history/20220912/1025Z/OMDB/EGLL",
+                    "trackLog": "/live/flight/UAE3/history/20220912/1025Z/OMDB/EGLL/tracklog",
+                    "flightHistory": "/live/flight/UAE3/history",
+                    "buyFlightHistory": "/live/flight/UAE3/history/buy",
+                    "reportInaccuracies": "/live/report/UAE3/history/20220912/1025Z/OMDB/EGLL",
+                    "facebook": "https://facebook.com/sharer.php?u=https://uk.flightaware.com/live/flight/UAE3/history/20220912/1025Z/OMDB/EGLL",
+                    "twitter": "https://twitter.com/intent/tweet?url=https://uk.flightaware.com/live/flight/UAE3/history/20220912/1025Z/OMDB/EGLL&via=FlightAware"
+                }
+            },
+            "coord": null,
+            "destination": {
+                "TZ": ":Europe/London",
+                "isValidAirportCode": true,
+                "altIdent": "LHR",
+                "iata": "LHR",
+                "friendlyName": "London Heathrow",
+                "friendlyLocation": "London, United Kingdom",
+                "coord": [
+                    -0.4614,
+                    51.4775
+                ],
+                "isLatLon": false,
+                "icao": "EGLL",
+                "gate": null,
+                "terminal": "3",
+                "delays": null
+            },
+            "displayIdent": "UAE3",
+            "distance": {
+                "elapsed": 2971,
+                "remaining": 1,
+                "actual": 3091
+            },
+            "diverted": false,
+            "encryptedFlightId": "f9110bcb6e03064b4c8dd9c0cb5f85e2b07972af223adf601e5ae78a0fed5f7b",
+            "flightId": "UAE3-1662805440-schedule-0465:6",
+            "flightPlan": {
+                "speed": 420,
+                "altitude": null,
+                "route": "",
+                "directDistance": 2972,
+                "plannedDistance": null,
+                "departure": 1662978300,
+                "ete": 25440,
+                "fuelBurn": {
+                    "gallons": 34000,
+                    "pounds": 230000
+                }
+            },
+            "flightStatus": "arrived",
+            "fpasAvailable": false,
+            "friendlyIdent": "Emirates 3",
+            "fruOverride": false,
+            "ga": false,
+            "gateArrivalTimes": {
+                "scheduled": 1663004400,
+                "estimated": 1663005540,
+                "actual": 1663005660
+            },
+            "gateDepartureTimes": {
+                "scheduled": 1662977700,
+                "estimated": 1662977700,
+                "actual": 1662978900
+            },
+            "globalCandidate": false,
+            "globalIdent": false,
+            "globalFlightFeatures": false,
+            "globalLegSharing": false,
+            "globalServices": {},
+            "globalVisualizer": false,
+            "groundspeed": null,
+            "heading": null,
+            "hexid": null,
+            "historical": false,
+            "iataIdent": "EK3",
+            "icon": "heavy_4e",
+            "ident": "UAE3",
+            "inboundFlight": {
+                "flightId": "UAE2-1662729960-schedule-0331:6",
+                "linkUrl": "/live/flight/id/UAE2-1662729960-schedule-0331%3a6"
+            },
+            "internal": null,
+            "interregional": true,
+            "landingTimes": {
+                "scheduled": 1663003740,
+                "estimated": 1663005240,
+                "actual": 1663005240
+            },
+            "links": {
+                "operated": "/live/flight/UAE3/history/20220912/1025Z/OMDB/EGLL",
+                "registration": "/live/flight//history/20220912/1025Z/OMDB/EGLL",
+                "permanent": "/live/flight/UAE3/history/20220912/1025Z/OMDB/EGLL",
+                "trackLog": "/live/flight/UAE3/history/20220912/1025Z/OMDB/EGLL/tracklog",
+                "flightHistory": "/live/flight/UAE3/history",
+                "buyFlightHistory": "/live/flight/UAE3/history/buy",
+                "reportInaccuracies": "/live/report/UAE3/history/20220912/1025Z/OMDB/EGLL",
+                "facebook": "https://facebook.com/sharer.php?u=https://uk.flightaware.com/live/flight/UAE3/history/20220912/1025Z/OMDB/EGLL",
+                "twitter": "https://twitter.com/intent/tweet?url=https://uk.flightaware.com/live/flight/UAE3/history/20220912/1025Z/OMDB/EGLL&via=FlightAware"
+            },
+            "myAlerts": {
+                "editAlert": "",
+                "advancedAlert": "/account/manage/alerts/0/add?m_ident=UAE3;date_start=2022-09-12;date_end=2022-09-12"
+            },
+            "myFlightAware": null,
+            "origin": {
+                "TZ": ":Asia/Dubai",
+                "isValidAirportCode": true,
+                "altIdent": "DXB",
+                "iata": "DXB",
+                "friendlyName": "Dubai Int'l",
+                "friendlyLocation": "Dubai, United Arab Emirates",
+                "coord": [
+                    55.3643,
+                    25.255
+                ],
+                "isLatLon": false,
+                "icao": "OMDB",
+                "gate": "A21",
+                "terminal": "3",
+                "delays": null
+            },
+            "poweredOff": null,
+            "poweredOn": null,
+            "predictedAvailable": false,
+            "predictedTimes": {
+                "out": null,
+                "off": null,
+                "on": null,
+                "in": null
+            },
+            "redactedBlockedTail": null,
+            "redactedCallsign": true,
+            "redactedTail": true,
+            "relatedThumbnails": [
+                {
+                    "thumbnail": "https://photos-e1.flightcdn.com/photos/retriever/f9c8d749650e376402c9e07d5e0bc20950c2f1f7",
+                    "target": "/photos/view/1005405-696d1b9c63c77c6b6d67ebccafeb5a06e44c927e"
+                },
+                {
+                    "thumbnail": "https://photos-e1.flightcdn.com/photos/retriever/daaba5be6e04782b8581bae6fe3b448af1a6c1b7",
+                    "target": "/photos/view/323248-64ddefb1f0113c73fc2d0f4132c545ed45031af3"
+                },
+                {
+                    "thumbnail": "https://photos-e1.flightcdn.com/photos/retriever/88875a5037546e2516fcffa46c199354a15889fe",
+                    "target": "/photos/view/3458561-cdb0c1eed140115498d8d86e071a1b534a3bc3c2"
+                },
+                {
+                    "thumbnail": "https://photos-e1.flightcdn.com/photos/retriever/92a3de4f51ab3af3400dc094ee370e4f9ccd7e91",
+                    "target": "/photos/view/12124712-82bd1cd98eba964f39ee6d12cf643f12d307c762"
+                },
+                {
+                    "thumbnail": "https://photos-e1.flightcdn.com/photos/retriever/4a55b7d7f288fee6b2ed4bfa4ffe16bb8f11701c",
+                    "target": "/photos/view/2104663-6900170327cd1d1264ec7ae66b5235d00b00eaba"
+                },
+                {
+                    "thumbnail": "https://photos-e1.flightcdn.com/photos/retriever/08352fadf0332cefb815b1f5ea79362ef5cf6688",
+                    "target": "/photos/view/3008590-00d59e8aaed423e4dce3f9f7adcddae7126efc1b"
+                },
+                {
+                    "thumbnail": "https://photos-e1.flightcdn.com/photos/retriever/6ff26f3b96f903053e60e6df72383e7a436a8812",
+                    "target": "/photos/view/12124712-e3d69f77552af731e6587cb576da23a3349ba7b6"
+                },
+                {
+                    "thumbnail": "https://photos-e1.flightcdn.com/photos/retriever/a3ee22563079fd1958eb21f8ba86d8bb0a8d9287",
+                    "target": "/photos/view/1005405-df86d647e63484ede3148e1ebdcaeb8f74aee0a3"
+                },
+                {
+                    "thumbnail": "https://photos-e1.flightcdn.com/photos/retriever/c1213d2d0d6e2402050bcd6eb1bb1ebf5c1d8ab3",
+                    "target": "/photos/view/2909199-4085dce76456c05c3513bf4db5f8d04355abb2d2"
+                },
+                {
+                    "thumbnail": "https://photos-e1.flightcdn.com/photos/retriever/ef1b5190f1ee5c92691955bcedeee3f32c9b9099",
+                    "target": "/photos/view/1005405-96957c3b413637aebac3bcc49eac50f0b8173d3c"
+                },
+                {
+                    "thumbnail": "https://photos-e1.flightcdn.com/photos/retriever/19d5df6146e63ecaeb9e5a63d9ebc05542b872ba",
+                    "target": "/photos/view/1005405-f81d4121759cc218101f7c7bdcd36c1ee863b2b7"
+                },
+                {
+                    "thumbnail": "https://photos-e1.flightcdn.com/photos/retriever/d8ec9c8aba5df4ff683be89951061835cf8f61d1",
+                    "target": "/photos/view/1005405-9951a420ebc625b6ab908c882b52474c610e4e10"
+                }
+            ],
+            "remarks": null,
+            "resultUnknown": false,
+            "roundedTimestamp": 1663005660,
+            "runways": {
+                "origin": null,
+                "destination": null
+            },
+            "speedInformation": null,
+            "showSurfaceTimes": false,
+            "surfaceTrackAvailable": null,
+            "takeoffTimes": {
+                "scheduled": 1662978300,
+                "estimated": 1662979860,
+                "actual": 1662979860
+            },
+            "taxiIn": null,
+            "taxiOut": null,
+            "thumbnail": {
+                "imageUrl": "https://e1.flightcdn.com/images/airline_logos/90p/UAE.png",
+                "linkUrl": "/live/fleet/UAE"
+            },
+            "timestamp": 1663005698,
+            "updateType": "",
+            "usingShareUrl": false,
+            "waypoints": [],
+            "weather": null
+        },
+        "trackTail": "EK3",
+        "trackDate": "12/9/2022"
+    }
+}

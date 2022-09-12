@@ -2,14 +2,14 @@ const axios = require('axios');
 
 const FlightRetriever = {
     search: async tail => {
-        const searchResponse = (await axios.get(`https://e1.flightcdn.com/ajax/ignoreall/omnisearch/flight.rvt?v=50&searchterm=${tail}`)).data;
-        const data = searchResponse.data;
-        if (!data.length || data[0].description.toLowerCase() === 'Unknown Owner') {
+        const searchResponse = (await axios.get(`https://e1.flightcdn.com/ajax/ignoreall/omnisearch/flight.rvt?v=50&searchterm=${tail}`))?.data;
+        const data = searchResponse?.data;
+        if (!data || !data.length || data[0].description.toLowerCase() === 'Unknown Owner') {
             return null;
         }
         if (data.length === 1) {
             return data;
-        } 
+        }
         return data.find(row => row.major_airline === '1')
     },
     get: async tail => {
@@ -20,10 +20,10 @@ const FlightRetriever = {
         }
 
         const flightAwareUrl = `https://uk.flightaware.com/live/flight/${flightSearch.ident}`;
-        const html = (await axios.get(flightAwareUrl)).data;
+        const html = (await axios.get(flightAwareUrl))?.data;
 
         let data;
-        if (html.includes('trackpollBootstrap')) {
+        if (html?.includes('trackpollBootstrap')) {
             data = html.match(/trackpollBootstrap = (.+)/)[1];
             data = data.substr(0, data.length - 10);
             data = JSON.parse(data);

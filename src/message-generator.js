@@ -33,6 +33,10 @@ function getTerminal(terminal) {
 }
 
 function calculateProgressBar(percent) {
+    if (!percent) {
+        return '';
+    }
+
     const totalBars = 15;
 
     const progress = (percent * totalBars) / 100;
@@ -42,9 +46,16 @@ function calculateProgressBar(percent) {
     return DASH.repeat(before) + '✈' + DASH.repeat(after);
 }
 
+function getThumbnail(flight) {
+    const thumbnails = flight.relatedThumbnails
+    const index = Math.floor(Math.random() * thumbnails.length)
+    return thumbnails[index].thumbnail
+}
+
 const MessageGenerator = {
     get: async (flight) => {
         if (!flight) {
+            console.error('No flight found');
             return null;
         }
 
@@ -72,10 +83,9 @@ const MessageGenerator = {
                     iconURL: flight.thumbnail.imageUrl,
                     url: flightAwareUrl
                 })
-                .setTimestamp()
                 .setTitle(status)
                 .setDescription(`**${flight.origin.iata} ${progress} ${flight.destination.iata}**`)
-                .setThumbnail(flight.relatedThumbnails[0].thumbnail)
+                .setThumbnail(getThumbnail(flight))
                 .setFields([
                     {
                         name: 'From',
@@ -98,17 +108,16 @@ const MessageGenerator = {
                     {
                         name: 'Aircraft',
                         value: flight.aircraft.friendlyType
-                    },
-                    {
-                        name: 'Updated',
-                        value: +new Date(),
-                        inline: true
                     }
-                ]);
+                ])
+                .setFooter({
+                    text: new Date().toISOString()
+                });
 
-            if (progress)
-                return embedText;
+            embedText.addFields()
+            return embedText;
         } catch (e) {
+            console.error(e);
             return null;
         }
     }

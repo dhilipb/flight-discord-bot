@@ -62,10 +62,15 @@ const TrackManager = {
             }
 
             const flight = await FlightRetriever.get(flightStore.trackTail);
+            if (!flight) {
+                continue;
+            }
+
             flightStore.flight = flight;
 
             const replyText = await MessageGenerator.get(flight);
             if (!replyText) {
+                console.error('No reply text found');
                 return;
             }
 
