@@ -56,7 +56,7 @@ const TrackManager = {
             
             const oldFlight = flightStore.flight;
 
-            if (oldFlight.flightStatus?.toUpperCase() === 'CANCELLED' || oldFlight.flightStatus?.toUpperCase() === 'LANDED') {
+            if (['CANCELLED', 'ARRIVED'].some(oldFlight.flightStatus?.toUpperCase())) {
                 return;
             }
             
