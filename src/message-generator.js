@@ -50,54 +50,64 @@ const MessageGenerator = {
 
         const status = flight.flightStatus.toUpperCase() || 'SCHEDULED';
 
+        const embedText = new EmbedBuilder();
+
         let progress;
         if (status === 'ARRIVED') {
             progress = calculateProgressBar(100);
         } else if (status === 'AIRBORNE') {
             progress = calculateProgressBar((flight.distance.elapsed / (flight.distance.elapsed + flight.distance.remaining)) * 100);
-        } else {
-            progress = calculateProgressBar(0);
+        }
+
+        if (progress) {
+            embedText.setDescription(`**${flight.origin.iata} ${progress} ${flight.destination.iata}**`)
         }
 
         const flightAwareUrl = `https://uk.flightaware.com/live/flight/${flight.ident}`;
 
         try {
-        const embedText = new EmbedBuilder()
-            .setURL(flightAwareUrl)
-            .setAuthor({
-                name: `${flight.codeShare.iataIdent} ${flight.codeShare.airline.fullName} Status`,
-                iconURL: flight.thumbnail.imageUrl,
-                url: flightAwareUrl
-            })
-            .setTimestamp()
-            .setTitle(status)
-            .setDescription(`**${flight.origin.iata} ${progress} ${flight.destination.iata}**`)
-            .setThumbnail(flight.relatedThumbnails[0].thumbnail)
-            .setFields([
-                {
-                    name: 'From',
-                    value: [
-                        `${flight.origin.friendlyLocation} (${flight.origin.iata}) ${getTerminal(flight.origin.terminal) || ''}`,
-                        DASH.repeat(30),
-                        convertTZ(flight.gateDepartureTimes, flight.origin.TZ),
-                        calculateDelay(flight.gateDepartureTimes)
-                    ].join('\n')
-                },
-                {
-                    name: 'To',
-                    value: [
-                        `${flight.destination.friendlyLocation} (${flight.destination.iata}) ${getTerminal(flight.destination.terminal) || ''}`,
-                        DASH.repeat(30),
-                        convertTZ(flight.gateArrivalTimes, flight.destination.TZ),
-                        calculateDelay(flight.gateArrivalTimes)
-                    ].join('\n')
-                },
-                {
-                    name: 'Aircraft',
-                    value: flight.aircraft.friendlyType
-                }
-            ]);
-            return embedText;
+            embedText.setURL(flightAwareUrl)
+                .setAuthor({
+                    name: `${flight.codeShare.iataIdent} ${flight.codeShare.airline.fullName} Status`,
+                    iconURL: flight.thumbnail.imageUrl,
+                    url: flightAwareUrl
+                })
+                .setTimestamp()
+                .setTitle(status)
+                .setDescription(`**${flight.origin.iata} ${progress} ${flight.destination.iata}**`)
+                .setThumbnail(flight.relatedThumbnails[0].thumbnail)
+                .setFields([
+                    {
+                        name: 'From',
+                        value: [
+                            `${flight.origin.friendlyLocation} (${flight.origin.iata}) ${getTerminal(flight.origin.terminal) || ''}`,
+                            DASH.repeat(28),
+                            convertTZ(flight.gateDepartureTimes, flight.origin.TZ),
+                            calculateDelay(flight.gateDepartureTimes)
+                        ].join('\n')
+                    },
+                    {
+                        name: 'To',
+                        value: [
+                            `${flight.destination.friendlyLocation} (${flight.destination.iata}) ${getTerminal(flight.destination.terminal) || ''}`,
+                            DASH.repeat(28),
+                            convertTZ(flight.gateArrivalTimes, flight.destination.TZ),
+                            calculateDelay(flight.gateArrivalTimes)
+                        ].join('\n')
+                    },
+                    {
+                        name: 'Aircraft',
+                        value: flight.aircraft.friendlyType
+                    },
+                    {
+                        name: 'Updated',
+                        value: +new Date(),
+                        inline: true
+                    }
+                ]);
+
+            if (progress)
+                return embedText;
         } catch (e) {
             return null;
         }

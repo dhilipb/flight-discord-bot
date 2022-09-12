@@ -20,7 +20,7 @@ const TrackManager = {
                 await interaction.reply(`Invalid date **${trackDate}**. Use format D/M/YYYY`);
                 return;
             }
-            
+
             // remove leading zeroes
             trackDate = trackDate.replace(/^0/, '').replace(/\/0/, '/');
         }
@@ -53,13 +53,14 @@ const TrackManager = {
         for (const flightStore of flightsToday) {
             const guild = DiscordClient.guilds.cache.get(flightStore.guildId);
             const channel = guild.channels.cache.get(flightStore.channelId);
-            
+
             const oldFlight = flightStore.flight;
 
             if (['CANCELLED', 'ARRIVED'].includes(oldFlight.flightStatus?.toUpperCase())) {
-                return;
+                CacheManager.delete(flightStore.trackTail, flightStore.trackDate);
+                continue;
             }
-            
+
             const flight = await FlightRetriever.get(flightStore.trackTail);
             flightStore.flight = flight;
 

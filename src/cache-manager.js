@@ -32,6 +32,18 @@ const CacheManager = {
             console.error(e);
         }
     },
+    delete: (tail, date) => {
+        try {
+            console.log('Deleting', tail, date);
+            if (tail && date) {
+                const cache = CacheManager.retrieve();
+                delete cache[tail + '-' + date];
+                fs.writeFileSync(fileName, JSON.stringify(cache, null, 4));
+            }
+        } catch (e) {
+            console.error(e);
+        }
+    },
     getToday: () => {
         console.log('Retrieving todays flight');
 
@@ -39,7 +51,9 @@ const CacheManager = {
         const todaysFlights = Object.values(cache).filter(item => {
             return item.trackDate === dayjs().format('D/M/YYYY');
         });
-        
+
+        console.log('Found', todaysFlights.length, 'flights');
+
         return todaysFlights;
     }
 }
