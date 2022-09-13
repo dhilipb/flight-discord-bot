@@ -15,7 +15,7 @@ const commands = [
                 .setRequired(true))
         .addStringOption(option =>
             option.setName('date')
-                .setDescription('Date of flight. Format: D/M/YYYY (1/1/2022)')
+                .setDescription('Date of flight. Format: D/M/YYYY (12/9/2022) or D/M (12/9)')
                 .setRequired(false))
 ]
     .map(command => command.toJSON());

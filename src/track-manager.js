@@ -94,6 +94,28 @@ const TrackManager = {
 
             CacheManager.store(flightStore);
         }
+    },
+
+    quickCheck: async (interaction) => {
+        const trackTail = interaction.options.get('tail').value.toUpperCase();
+        if (!trackTail) {
+            console.error("Tail not found!");
+            return;
+        }
+
+        const flight = await FlightRetriever.get(trackTail);
+        if (!flight) {
+            console.error("Flight not found!");
+            await interaction.reply(`Couldn't find tail "${trackTail}"`);
+            return;
+        }
+
+        const replyText = await MessageGenerator.get(flight);
+        if (!replyText) {
+            await interaction.reply(`Couldn't find tail "${trackTail}"`);
+        }
+
+        await interaction.reply({ embeds: [replyText] });
     }
 }
 
