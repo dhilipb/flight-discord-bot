@@ -1,10 +1,12 @@
 const fs = require('fs');
+const path = require('path');
 const dayjs = require('dayjs');
 
 const fileName = 'cache/cache.json';
 
 if (!fs.existsSync(fileName)) {
-    fs.writeFileSync(fileName, '[]');
+    fs.mkdirSync(path.basename(path.dirname(fileName)));
+    fs.writeFileSync(fileName, '{}');
 }
 
 const CacheManager = {
