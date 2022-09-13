@@ -1,8 +1,12 @@
 const dayjs = require('dayjs');
+const customParseFormat = require('dayjs/plugin/customParseFormat');
+
 const FlightRetriever = require('./flight-retriever');
 const MessageGenerator = require('./message-generator');
 const DiscordClient = require('./discord-client');
 const CacheManager = require('./cache-manager');
+
+dayjs.extend(customParseFormat);
 
 const TrackManager = {
     addToTrack: async (interaction) => {
@@ -10,19 +14,22 @@ const TrackManager = {
         let trackDate = interaction.options.get('date')?.value;
 
         if (!trackTail) {
+            console.error("Tail not found!");
             return;
         }
 
-        if (trackDate) {
+        if (trackDate && trackDate.includes("/")) {
+            const [day, month, year] = trackDate.split("/");
 
-            const testDate = trackDate.includes('/') && /\d{1,2}\/\d{1,2}\/\d{4}/.test(trackDate);
-            if (!testDate) {
-                await interaction.reply(`Invalid date **${trackDate}**. Use format D/M/YYYY`);
+            const currentYear = new Date().getFullYear();
+            const dateResolved = dayjs(`${year || currentYear}-${month}-${day}`);
+
+            if (!dateResolved.isValid()) {
+                await interaction.reply(`Invalid date **${trackDate}**. Use format D/M/YYYY or D/M`);
                 return;
             }
 
-            // remove leading zeroes
-            trackDate = trackDate.replace(/^0/, '').replace(/\/0/, '/');
+            trackDate = dateResolved.format('D/M/YYYY');
         }
 
         const store = {
