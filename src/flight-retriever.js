@@ -8,7 +8,7 @@ const FlightRetriever = {
             return null;
         }
         if (data.length === 1) {
-            return data;
+            return data[0];
         }
         return data.find(row => row.major_airline === '1')
     },
@@ -48,8 +48,6 @@ const FlightRetriever = {
 
             return flight;
         }
-
-        console.error(`Flight ${tail} does not exist`);
 
         return null;
     }
