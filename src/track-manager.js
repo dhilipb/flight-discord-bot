@@ -7,7 +7,7 @@ const CacheManager = require('./cache-manager');
 const TrackManager = {
     addToTrack: async (interaction) => {
         const trackTail = interaction.options.get('tail').value.toUpperCase();
-        const trackDate = interaction.options.get('date')?.value;
+        let trackDate = interaction.options.get('date')?.value;
 
         if (!trackTail) {
             return;
