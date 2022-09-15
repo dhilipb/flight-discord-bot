@@ -37,10 +37,6 @@ function getTerminal(terminal) {
 }
 
 function calculateProgressBar(percent) {
-    if (!percent) {
-        return '';
-    }
-
     const totalBars = 15;
 
     const progress = (percent * totalBars) / 100;
@@ -58,15 +54,19 @@ function getThumbnail(flight) {
 
 
 function getTimeText(flight) {
+    const status = flight.flightStatus;
+
     let timeText;
-    if (FlightStatus.compare(flight.flightStatus, FlightStatus.AIRBORNE)
-        || FlightStatus.compare(flight.flightStatus, FlightStatus.ARRIVED)) {
+    if (FlightStatus.compare(status, FlightStatus.AIRBORNE)
+        || FlightStatus.compare(status, FlightStatus.ARRIVED)) {
         const time = (flight.gateArrivalTimes.actual || flight.gateArrivalTimes.estimated || flight.gateArrivalTimes.scheduled) * 1000;
         timeText = dayjs(time).fromNow();
-    } else if (FlightStatus.compare(flight.flightStatus, FlightStatus.SCHEDULED)) {
+    } else if (FlightStatus.compare(status, FlightStatus.SCHEDULED) || status === '') {
         const time = (flight.gateDepartureTimes.actual || flight.gateDepartureTimes.estimated || flight.gateDepartureTimes.scheduled) * 1000;
+        console.log(flight.gateDepartureTimes);
         timeText = dayjs(time).fromNow();
     }
+
     return timeText;
 }
 
