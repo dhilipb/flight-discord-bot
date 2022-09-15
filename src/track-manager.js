@@ -5,6 +5,7 @@ const FlightRetriever = require('./flight-retriever');
 const MessageGenerator = require('./message-generator');
 const DiscordClient = require('./discord-client');
 const CacheManager = require('./cache-manager');
+const FlightStatus = require('./model/flight-status');
 
 dayjs.extend(customParseFormat);
 
@@ -58,13 +59,18 @@ const TrackManager = {
         const flightsToday = CacheManager.getToday();
 
         for (const flightStore of flightsToday) {
-            const guild = DiscordClient.guilds.cache.get(flightStore.guildId);
-            const channel = guild.channels.cache.get(flightStore.channelId);
 
             const oldFlight = flightStore.flight;
+            const oldFlightStatus = oldFlight?.flightStatus?.toUpperCase();
 
-            if (['CANCELLED', 'ARRIVED'].includes(oldFlight.flightStatus?.toUpperCase())) {
+            if ([FlightStatus.CANCELLED, FlightStatus.ARRIVED].includes(oldFlightStatus)) {
                 CacheManager.delete(flightStore.trackTail, flightStore.trackDate);
+                continue;
+            }
+
+            const lotOfTimeToFly = dayjs(oldFlight?.gateDepartureTimes?.scheduled).isAfter(dayjs().add(1, 'hour'));
+            if (FlightStatus.compare(oldFlightStatus, FlightStatus.SCHEDULED) && lotOfTimeToFly) {
+                // Do not update if we still have a long time for the flight
                 continue;
             }
 
@@ -81,8 +87,11 @@ const TrackManager = {
                 return;
             }
 
-            const shouldReply = flightStore.replyId && flight.flightStatus === oldFlight?.flightStatus;
-            if (shouldReply) {
+            const guild = DiscordClient.guilds.cache.get(flightStore.guildId);
+            const channel = guild.channels.cache.get(flightStore.channelId);
+
+            const shouldUpdateMessage = flightStore.replyId && (flight.flightStatus === oldFlight?.flightStatus || FlightStatus.compare(oldFlightStatus, FlightStatus.SCHEDULED));
+            if (shouldUpdateMessage) {
                 const message = await channel.messages.fetch(flightStore.replyId);
                 console.log('Updating message', flightStore.trackTail);
                 message.edit({ embeds: [replyText] });

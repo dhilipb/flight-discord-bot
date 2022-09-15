@@ -1,10 +1,14 @@
-const axios = require('axios');
-const fs = require('fs');
 const { EmbedBuilder } = require('discord.js');
+const dayjs = require('dayjs');
+const relativeTime = require('dayjs/plugin/relativeTime');
+
+dayjs.extend(relativeTime);
+
+const FlightStatus = require('./model/flight-status');
 
 const DASH = '=';
 
-function convertTZ(times, tz) {
+function getFlightTimeInfo(times, tz) {
     tz = tz.replace(':', '');
     const scheduledTime = new Date(times.scheduled * 1000).toLocaleString("en-US", { timeZone: tz });
     const estimatedTime = new Date(times.estimated * 1000).toLocaleString("en-US", { timeZone: tz });
@@ -52,6 +56,20 @@ function getThumbnail(flight) {
     return thumbnails[index].thumbnail
 }
 
+
+function getTimeText(flight) {
+    let timeText;
+    if (FlightStatus.compare(flight.flightStatus, FlightStatus.AIRBORNE)
+        || FlightStatus.compare(flight.flightStatus, FlightStatus.ARRIVED)) {
+        const time = (flight.gateArrivalTimes.actual || flight.gateArrivalTimes.estimated || flight.gateArrivalTimes.scheduled) * 1000;
+        timeText = dayjs(time).fromNow();
+    } else if (FlightStatus.compare(flight.flightStatus, FlightStatus.SCHEDULED)) {
+        const time = (flight.gateDepartureTimes.actual || flight.gateDepartureTimes.estimated || flight.gateDepartureTimes.scheduled) * 1000;
+        timeText = dayjs(time).fromNow();
+    }
+    return timeText;
+}
+
 const MessageGenerator = {
     get: async (flight) => {
         if (!flight) {
@@ -59,24 +77,28 @@ const MessageGenerator = {
             return null;
         }
 
-        const status = flight.flightStatus.toUpperCase() || 'SCHEDULED';
+        const status = flight.flightStatus.toUpperCase() || FlightStatus.SCHEDULED;
 
         const embedText = new EmbedBuilder();
 
-        let progress;
-        if (status === 'ARRIVED') {
+        let progress = calculateProgressBar(0);
+        if (FlightStatus.compare(status, FlightStatus.ARRIVED)) {
             progress = calculateProgressBar(100);
-        } else if (status === 'AIRBORNE') {
+        } else if (FlightStatus.compare(status, FlightStatus.AIRBORNE)) {
             progress = calculateProgressBar((flight.distance.elapsed / (flight.distance.elapsed + flight.distance.remaining)) * 100);
-        }
-
-        if (progress) {
-            embedText.setDescription(`**${flight.origin.iata} ${progress} ${flight.destination.iata}**`)
         }
 
         const flightAwareUrl = `https://uk.flightaware.com/live/flight/${flight.ident}`;
 
         try {
+
+            const timeText = getTimeText(flight);
+
+            const description = [
+                `**${flight.origin.iata} ${progress} ${flight.destination.iata}**`,
+                timeText
+            ].filter(x => !!x).join('\n');
+
             embedText.setURL(flightAwareUrl)
                 .setAuthor({
                     name: `${flight.codeShare.iataIdent} ${flight.codeShare.airline.fullName} Status`,
@@ -84,7 +106,7 @@ const MessageGenerator = {
                     url: flightAwareUrl
                 })
                 .setTitle(status)
-                .setDescription(`**${flight.origin.iata} ${progress} ${flight.destination.iata}**`)
+                .setDescription(description)
                 .setThumbnail(getThumbnail(flight))
                 .setFields([
                     {
@@ -92,7 +114,7 @@ const MessageGenerator = {
                         value: [
                             `${flight.origin.friendlyLocation} (${flight.origin.iata}) ${getTerminal(flight.origin.terminal) || ''}`,
                             DASH.repeat(28),
-                            convertTZ(flight.gateDepartureTimes, flight.origin.TZ),
+                            getFlightTimeInfo(flight.gateDepartureTimes, flight.origin.TZ),
                             calculateDelay(flight.gateDepartureTimes)
                         ].join('\n')
                     },
@@ -101,7 +123,7 @@ const MessageGenerator = {
                         value: [
                             `${flight.destination.friendlyLocation} (${flight.destination.iata}) ${getTerminal(flight.destination.terminal) || ''}`,
                             DASH.repeat(28),
-                            convertTZ(flight.gateArrivalTimes, flight.destination.TZ),
+                            getFlightTimeInfo(flight.gateArrivalTimes, flight.destination.TZ),
                             calculateDelay(flight.gateArrivalTimes)
                         ].join('\n')
                     },
@@ -110,11 +132,14 @@ const MessageGenerator = {
                         value: flight.aircraft.friendlyType
                     }
                 ])
-                .setFooter({
-                    text: new Date().toISOString()
-                });
+                .setTimestamp();
 
-            embedText.addFields()
+            if (FlightStatus.compare(status, FlightStatus.AIRBORNE)) {
+                embedText.setFooter({
+                    text: "Alt: " + (flight.altitude * 100).toLocaleString() + 'ft, Speed: ' + (flight.groundspeed || 0) + 'mph'
+                })
+            }
+
             return embedText;
         } catch (e) {
             console.error(e);
