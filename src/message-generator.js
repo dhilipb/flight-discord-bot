@@ -38,7 +38,7 @@ function getTerminal(terminal) {
 
 function calculateProgressBar(percent) {
     if (!percent) {
-        return '';
+        //return '';
     }
 
     const totalBars = 15;
