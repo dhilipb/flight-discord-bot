@@ -14,8 +14,8 @@ function getFlightTimeInfo(times, tz) {
     const estimatedTime = new Date(times.estimated * 1000).toLocaleString("en-US", { timeZone: tz });
     const actualTime = new Date(times.actual * 1000).toLocaleString("en-US", { timeZone: tz });
     return [
-        `Estimated Time: ${scheduledTime}`,
-        `Scheduled Time: ${estimatedTime}`,
+        `Estimated Time: ${estimatedTime}`,
+        `Scheduled Time: ${scheduledTime}`,
         `Actual Time: ${actualTime}`
     ]
         .filter(line => line && !line.includes('1970'))
@@ -29,7 +29,7 @@ function calculateDelay(times) {
         return '';
     }
 
-    return time + ' mins ' + (difference < 0 ? 'late' : 'early');
+    return time + ' mins ' + (difference > 0 ? 'late' : 'early');
 }
 
 function getTerminal(terminal) {
