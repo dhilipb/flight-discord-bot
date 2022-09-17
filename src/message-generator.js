@@ -29,7 +29,7 @@ function calculateDelay(times) {
         return '';
     }
 
-    return time + ' mins ' + (difference > 0 ? 'late' : 'early');
+    return time + ' mins ' + (difference < 0 ? 'late' : 'early');
 }
 
 function getTerminal(terminal) {
