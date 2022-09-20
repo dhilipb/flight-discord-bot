@@ -1,4 +1,7 @@
 const axios = require('axios');
+const dayjs = require('dayjs');
+
+const FLIGHTAWARE_DOMAIN = 'https://uk.flightaware.com';
 
 const FlightRetriever = {
     search: async tail => {
@@ -12,18 +15,30 @@ const FlightRetriever = {
         }
         return data.find(row => row.major_airline === '1')
     },
-    get: async (tail, flightAwareUrl) => {
+    get: async (tail) => {
 
-        if (!flightAwareUrl) {
-            const flightSearch = await FlightRetriever.search(tail);
-            if (!flightSearch) {
-                console.error(`Flight ${tail} does not exist`);
-                return '';
-            }
-
-            flightAwareUrl = `https://uk.flightaware.com/live/flight/${flightSearch.ident}`;
+        const flightSearch = await FlightRetriever.search(tail);
+        if (!flightSearch) {
+            console.error(`Flight ${tail} does not exist`);
+            return '';
         }
 
+        flightAwareUrl = `${FLIGHTAWARE_DOMAIN}/live/flight/${flightSearch.ident}`;
+
+        let flight = await FlightRetriever.getByUrl(flightAwareUrl);
+
+        const isOldFlight = dayjs(flight.gateDepartureTimes?.scheduled).isBefore(dayjs());
+        if (isOldFlight) {
+            const yyyymmdd = dayjs().format('YYYYMMDD');
+            const permanentUrl = FLIGHTAWARE_DOMAIN + flight.links.permanent.replace(/history\/\d+/, 'history/' + yyyymmdd);
+            console.log('Found old flight, finding new flight', permanentUrl);
+            flight = await FlightRetriever.getByUrl(permanentUrl);
+        }
+
+        return flight;
+    },
+
+    getByUrl: async flightAwareUrl => {
         const html = (await axios.get(flightAwareUrl))?.data;
 
         let data;

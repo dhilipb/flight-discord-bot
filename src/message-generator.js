@@ -47,23 +47,25 @@ function calculateProgressBar(percent) {
 }
 
 function getThumbnail(flight) {
-    const thumbnails = flight.relatedThumbnails
-    const index = Math.floor(Math.random() * thumbnails.length)
-    return thumbnails[index].thumbnail
+    const thumbnails = flight.relatedThumbnails;
+    if (thumbnails?.length) {
+        const index = Math.floor(Math.random() * thumbnails.length)
+        return thumbnails[index].thumbnail
+    }
+
+    return null;
 }
 
 
 function getTimeText(flight) {
     const status = flight.flightStatus;
 
-    let timeText;
-    if (FlightStatus.isAirborne(status)
-        || FlightStatus.isArrived(status)) {
+    let timeText = '';
+    if (FlightStatus.isAirborne(status)) {
         const time = (flight.gateArrivalTimes.actual || flight.gateArrivalTimes.estimated || flight.gateArrivalTimes.scheduled) * 1000;
         timeText = dayjs(time).fromNow();
-    } else if (FlightStatus.isScheduled(status) || status === '') {
+    } else if (FlightStatus.isScheduled(status)) {
         const time = (flight.gateDepartureTimes.actual || flight.gateDepartureTimes.estimated || flight.gateDepartureTimes.scheduled) * 1000;
-        console.log(flight.gateDepartureTimes);
         timeText = dayjs(time).fromNow();
     }
 
