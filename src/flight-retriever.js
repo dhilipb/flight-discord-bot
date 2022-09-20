@@ -12,14 +12,18 @@ const FlightRetriever = {
         }
         return data.find(row => row.major_airline === '1')
     },
-    get: async tail => {
-        const flightSearch = await FlightRetriever.search(tail);
-        if (!flightSearch) {
-            console.error(`Flight ${tail} does not exist`);
-            return '';
+    get: async (tail, flightAwareUrl) => {
+
+        if (!flightAwareUrl) {
+            const flightSearch = await FlightRetriever.search(tail);
+            if (!flightSearch) {
+                console.error(`Flight ${tail} does not exist`);
+                return '';
+            }
+
+            flightAwareUrl = `https://uk.flightaware.com/live/flight/${flightSearch.ident}`;
         }
 
-        const flightAwareUrl = `https://uk.flightaware.com/live/flight/${flightSearch.ident}`;
         const html = (await axios.get(flightAwareUrl))?.data;
 
         let data;

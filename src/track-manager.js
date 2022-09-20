@@ -63,13 +63,13 @@ const TrackManager = {
             const oldFlight = flightStore.flight;
             const oldFlightStatus = oldFlight?.flightStatus?.toUpperCase();
 
-            if ([FlightStatus.CANCELLED, FlightStatus.ARRIVED].includes(oldFlightStatus)) {
+            if ([FlightStatus.Cancelled, FlightStatus.Arrived].includes(oldFlightStatus)) {
                 CacheManager.delete(flightStore.trackTail, flightStore.trackDate);
                 continue;
             }
 
             const lotOfTimeToFly = dayjs(oldFlight?.gateDepartureTimes?.scheduled).isAfter(dayjs().add(1, 'hour'));
-            if (FlightStatus.compare(oldFlightStatus, FlightStatus.SCHEDULED) && lotOfTimeToFly) {
+            if (FlightStatus.isScheduled(oldFlightStatus) && lotOfTimeToFly) {
                 // Do not update if we still have a long time for the flight
                 continue;
             }
@@ -90,7 +90,7 @@ const TrackManager = {
             const guild = DiscordClient.guilds.cache.get(flightStore.guildId);
             const channel = guild.channels.cache.get(flightStore.channelId);
 
-            const shouldUpdateMessage = flightStore.replyId && (flight.flightStatus === oldFlight?.flightStatus || FlightStatus.compare(oldFlightStatus, FlightStatus.SCHEDULED));
+            const shouldUpdateMessage = flightStore.replyId && (flight.flightStatus === oldFlight?.flightStatus || FlightStatus.isScheduled(oldFlightStatus));
             if (shouldUpdateMessage) {
                 const message = await channel.messages.fetch(flightStore.replyId);
                 console.log('Updating message', flightStore.trackTail);

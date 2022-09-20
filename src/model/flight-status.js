@@ -1,7 +1,13 @@
-module.exports = {
-    ARRIVED: 'ARRIVED',
-    AIRBORNE: 'AIRBORNE',
-    CANCELLED: 'CANCELLED',
-    SCHEDULED: 'SCHEDULED',
-    compare: (a, b) => a?.toUpperCase() === b?.toUpperCase() && a !== null && b !== null
+const FlightStatus = {
+    Arrived: 'ARRIVED',
+    Airborne: 'AIRBORNE',
+    Cancelled: 'CANCELLED',
+    Scheduled: 'SCHEDULED',
+
+    isArrived: status => status.toUpperCase() === FlightStatus.Arrived,
+    isAirborne: status => status.toUpperCase() === FlightStatus.Airborne,
+    isCancelled: status => status.toUpperCase() === FlightStatus.Cancelled,
+    isScheduled: status => status.toUpperCase() === FlightStatus.Scheduled
 }
+
+module.exports = FlightStatus;

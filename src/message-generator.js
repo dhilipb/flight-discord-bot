@@ -57,11 +57,11 @@ function getTimeText(flight) {
     const status = flight.flightStatus;
 
     let timeText;
-    if (FlightStatus.compare(status, FlightStatus.AIRBORNE)
-        || FlightStatus.compare(status, FlightStatus.ARRIVED)) {
+    if (FlightStatus.isAirborne(status)
+        || FlightStatus.isArrived(status)) {
         const time = (flight.gateArrivalTimes.actual || flight.gateArrivalTimes.estimated || flight.gateArrivalTimes.scheduled) * 1000;
         timeText = dayjs(time).fromNow();
-    } else if (FlightStatus.compare(status, FlightStatus.SCHEDULED) || status === '') {
+    } else if (FlightStatus.isScheduled(status) || status === '') {
         const time = (flight.gateDepartureTimes.actual || flight.gateDepartureTimes.estimated || flight.gateDepartureTimes.scheduled) * 1000;
         console.log(flight.gateDepartureTimes);
         timeText = dayjs(time).fromNow();
@@ -77,14 +77,14 @@ const MessageGenerator = {
             return null;
         }
 
-        const status = flight.flightStatus.toUpperCase() || FlightStatus.SCHEDULED;
+        const status = flight.flightStatus.toUpperCase() || FlightStatus.Scheduled;
 
         const embedText = new EmbedBuilder();
 
         let progress = calculateProgressBar(0);
-        if (FlightStatus.compare(status, FlightStatus.ARRIVED)) {
+        if (FlightStatus.isArrived(status)) {
             progress = calculateProgressBar(100);
-        } else if (FlightStatus.compare(status, FlightStatus.AIRBORNE)) {
+        } else if (FlightStatus.isAirborne(status)) {
             progress = calculateProgressBar((flight.distance.elapsed / (flight.distance.elapsed + flight.distance.remaining)) * 100);
         }
 
@@ -134,7 +134,7 @@ const MessageGenerator = {
                 ])
                 .setTimestamp();
 
-            if (FlightStatus.compare(status, FlightStatus.AIRBORNE)) {
+            if (FlightStatus.isAirborne(status)) {
                 embedText.setFooter({
                     text: "Alt: " + (flight.altitude * 100).toLocaleString() + 'ft, Speed: ' + (flight.groundspeed || 0) + 'mph'
                 })
