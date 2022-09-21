@@ -68,7 +68,7 @@ const TrackManager = {
                 continue;
             }
 
-            const lotOfTimeToFly = dayjs(oldFlight?.gateDepartureTimes?.scheduled).isAfter(dayjs().add(1, 'hour'));
+            const lotOfTimeToFly = dayjs(oldFlight?.gateDepartureTimes?.scheduled * 1000).isAfter(dayjs().add(1, 'hour'));
             if (FlightStatus.isScheduled(oldFlightStatus) && lotOfTimeToFly) {
                 // Do not update if we still have a long time for the flight
                 continue;
@@ -112,19 +112,24 @@ const TrackManager = {
             return;
         }
 
-        const flight = await FlightRetriever.get(trackTail);
-        if (!flight) {
-            console.error("Flight not found!");
-            await interaction.reply(`Couldn't find tail "${trackTail}"`);
-            return;
-        }
+        try {
+            const flight = await FlightRetriever.get(trackTail);
+            if (!flight) {
+                console.error("Flight not found!");
+                await interaction.reply(`Couldn't find tail "${trackTail}"`);
+                return;
+            }
 
-        const replyText = await MessageGenerator.get(flight);
-        if (!replyText) {
-            await interaction.reply(`Couldn't find tail "${trackTail}"`);
-        }
+            const replyText = await MessageGenerator.get(flight);
+            if (!replyText) {
+                await interaction.reply(`Couldn't find tail "${trackTail}"`);
+            }
 
-        await interaction.reply({ embeds: [replyText] });
+            await interaction.reply({ embeds: [replyText] });
+        } catch (e) {
+            console.error(e);
+            await interaction.reply('Error in server. Please try again later');
+        }
     }
 }
 

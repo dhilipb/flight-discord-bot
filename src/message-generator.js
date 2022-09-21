@@ -1,8 +1,28 @@
 const { EmbedBuilder } = require('discord.js');
 const dayjs = require('dayjs');
 const relativeTime = require('dayjs/plugin/relativeTime');
+const updateLocale = require('dayjs/plugin/updateLocale');
 
 dayjs.extend(relativeTime);
+dayjs.extend(updateLocale)
+
+dayjs.updateLocale('en', {
+    relativeTime: {
+        future: "in %s",
+        past: "%s ago",
+        s: "a few seconds",
+        m: "%d seconds",
+        mm: "%d minutes",
+        h: "%d minutes",
+        hh: "%d hours",
+        d: "%d hours",
+        dd: "%d days",
+        M: "%d days",
+        MM: "%d months",
+        y: "%d months",
+        yy: "%d years"
+    }
+})
 
 const FlightStatus = require('./model/flight-status');
 
@@ -26,6 +46,10 @@ function calculateDelay(times) {
     const difference = (times.actual || times.estimated) - times.scheduled;
     const time = Math.abs((difference / 60));
     if (time === 0) {
+        return '';
+    }
+
+    if (Math.abs(times.scheduled) === times.scheduled) {
         return '';
     }
 
@@ -60,16 +84,15 @@ function getThumbnail(flight) {
 function getTimeText(flight) {
     const status = flight.flightStatus;
 
-    let timeText = '';
     if (FlightStatus.isAirborne(status)) {
         const time = (flight.gateArrivalTimes.actual || flight.gateArrivalTimes.estimated || flight.gateArrivalTimes.scheduled) * 1000;
-        timeText = dayjs(time).fromNow();
+        return 'Landing ' + dayjs(time).fromNow();
     } else if (FlightStatus.isScheduled(status)) {
         const time = (flight.gateDepartureTimes.actual || flight.gateDepartureTimes.estimated || flight.gateDepartureTimes.scheduled) * 1000;
-        timeText = dayjs(time).fromNow();
+        return 'Take off ' + dayjs(time).fromNow();
     }
 
-    return timeText;
+    return '';
 }
 
 const MessageGenerator = {
