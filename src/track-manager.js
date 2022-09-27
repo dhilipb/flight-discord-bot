@@ -12,6 +12,7 @@ dayjs.extend(customParseFormat);
 const TrackManager = {
     addToTrack: async (interaction) => {
         const trackTail = interaction.options.get('tail').value.toUpperCase();
+        const trackTag = interaction.options.get('tag')?.value;
         let trackDate = interaction.options.get('date')?.value;
 
         if (!trackTail) {
@@ -39,7 +40,8 @@ const TrackManager = {
             replyId: '',
             flight: {},
             trackTail,
-            trackDate
+            trackDate,
+            trackTag
         };
 
         if (!await FlightRetriever.search(trackTail)) {
@@ -51,7 +53,11 @@ const TrackManager = {
             store.trackDate = dayjs().format('D/M/YYYY');
         }
 
-        await interaction.reply(`Your flight **${store.trackTail.toUpperCase()}** at ${store.trackDate} has been added to tracking`);
+        if (trackTag) {
+            await interaction.reply(`Your flight **${store.trackTail.toUpperCase()}** at ${store.trackDate} tagged **${trackTag}** has been added to tracking`);
+        } else {
+            await interaction.reply(`Your flight **${store.trackTail.toUpperCase()}** at ${store.trackDate} has been added to tracking`);
+        }
 
         CacheManager.store(store);
     },
@@ -81,7 +87,7 @@ const TrackManager = {
 
             flightStore.flight = flight;
 
-            const replyText = await MessageGenerator.get(flight);
+            const replyText = await MessageGenerator.get(flight, flightStore.trackTag);
             if (!replyText) {
                 console.error('No reply text found');
                 return;

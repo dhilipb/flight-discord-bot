@@ -17,6 +17,10 @@ const commands = [
             option.setName('date')
                 .setDescription('Date of flight. Format: D/M/YYYY (12/9/2022) or D/M (12/9)')
                 .setRequired(false))
+        .addStringOption(option =>
+            option.setName('tag')
+                .setDescription('Tag this tracking. Perhaps a name.')
+                .setRequired(false))
 ]
     .map(command => command.toJSON());
 

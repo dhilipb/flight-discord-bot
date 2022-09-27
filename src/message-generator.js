@@ -96,7 +96,7 @@ function getTimeText(flight) {
 }
 
 const MessageGenerator = {
-    get: async (flight) => {
+    get: async (flight, trackTag = null) => {
         if (!flight) {
             console.error('No flight found');
             return null;
@@ -121,7 +121,8 @@ const MessageGenerator = {
 
             const description = [
                 `**${flight.origin.iata} ${progress} ${flight.destination.iata}**`,
-                timeText
+                timeText,
+                trackTag ? `Tagged ${trackTag}` : ''
             ].filter(x => !!x).join('\n');
 
             embedText.setURL(flightAwareUrl)

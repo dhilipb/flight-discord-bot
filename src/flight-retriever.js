@@ -4,11 +4,14 @@ const FlightStatus = require('./model/flight-status');
 
 const FLIGHTAWARE_DOMAIN = 'https://uk.flightaware.com';
 
+axios.defaults.headers.common['User-Agent'] = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36";
+
+
 const FlightRetriever = {
     search: async tail => {
-        const searchResponse = (await axios.get(`https://e1.flightcdn.com/ajax/ignoreall/omnisearch/flight.rvt?v=50&searchterm=${tail}`))?.data;
-
+        const searchResponse = (await axios.get(`https://e1.flightcdn.com/ajax/ignoreall/omnisearch/flight.rvt?v=50&searchterm=${tail}&q=${tail}`))?.data;
         const data = searchResponse?.data;
+
         if (!data || !data.length || data[0].description.toLowerCase() === 'Unknown Owner') {
             return null;
         }
