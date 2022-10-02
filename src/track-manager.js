@@ -37,8 +37,6 @@ const TrackManager = {
         const store = {
             channelId: interaction.channelId,
             guildId: interaction.guildId,
-            replyId: '',
-            flight: {},
             trackTail,
             trackDate,
             trackTag
