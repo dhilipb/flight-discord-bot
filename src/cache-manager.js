@@ -28,7 +28,17 @@ const CacheManager = {
 
         try {
             const cache = CacheManager.retrieve();
-            cache[store.trackTail + '-' + store.trackDate] = store;
+            const cacheKey = JSON.stringify({
+                channelId: store.channelId,
+                guildId: store.guildId,
+                replyId: store.replyId,
+                flight: store.flight,
+                trackTail: store.trackTail,
+                trackDate: store.trackDate,
+                trackTag: store.trackTag
+            });
+
+            cache[cacheKey] = store;
             fs.writeFileSync(fileName, JSON.stringify(cache, null, 4));
         } catch (e) {
             console.error(e);
