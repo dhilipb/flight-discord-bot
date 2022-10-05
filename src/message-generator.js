@@ -102,14 +102,14 @@ const MessageGenerator = {
             return null;
         }
 
-        const status = (flight.flightStatus.toUpperCase() || FlightStatus.Scheduled) + (trackTag ? ` - ${trackTag}` : "");
+        const status = flight.flightStatus.toUpperCase() || FlightStatus.Scheduled;
 
         const embedText = new EmbedBuilder();
 
         let progress = calculateProgressBar(0);
-        if (FlightStatus.isArrived(flight.flightStatus)) {
+        if (FlightStatus.isArrived(status)) {
             progress = calculateProgressBar(100);
-        } else if (FlightStatus.isAirborne(flight.flightStatus)) {
+        } else if (FlightStatus.isAirborne(status)) {
             progress = calculateProgressBar((flight.distance.elapsed / (flight.distance.elapsed + flight.distance.remaining)) * 100);
         }
 
@@ -130,7 +130,7 @@ const MessageGenerator = {
                     iconURL: flight.thumbnail.imageUrl,
                     url: flightAwareUrl
                 })
-                .setTitle(status)
+                .setTitle(status + (trackTag ? ` - ${trackTag}` : ""))
                 .setDescription(description)
                 .setThumbnail(getThumbnail(flight))
                 .setFields([
