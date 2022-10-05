@@ -102,14 +102,14 @@ const MessageGenerator = {
             return null;
         }
 
-        const status = flight.flightStatus.toUpperCase() || FlightStatus.Scheduled;
+        const status = (flight.flightStatus.toUpperCase() || FlightStatus.Scheduled) + (trackTag ? ` - ${trackTag}` : "");
 
         const embedText = new EmbedBuilder();
 
         let progress = calculateProgressBar(0);
-        if (FlightStatus.isArrived(status)) {
+        if (FlightStatus.isArrived(flight.flightStatus)) {
             progress = calculateProgressBar(100);
-        } else if (FlightStatus.isAirborne(status)) {
+        } else if (FlightStatus.isAirborne(flight.flightStatus)) {
             progress = calculateProgressBar((flight.distance.elapsed / (flight.distance.elapsed + flight.distance.remaining)) * 100);
         }
 
@@ -121,8 +121,7 @@ const MessageGenerator = {
 
             const description = [
                 `**${flight.origin.iata} ${progress} ${flight.destination.iata}**`,
-                timeText,
-                trackTag ? `Tagged ${trackTag}` : ''
+                timeText
             ].filter(x => !!x).join('\n');
 
             embedText.setURL(flightAwareUrl)

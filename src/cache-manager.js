@@ -28,14 +28,15 @@ const CacheManager = {
 
         try {
             const cache = CacheManager.retrieve();
-            const cacheKey = JSON.stringify({
-                channelId: store.channelId,
-                guildId: store.guildId,
-                trackTail: store.trackTail,
-                trackDate: store.trackDate,
-                trackTag: store.trackTag
-            });
+            const cacheKey = [
+                store.channelId,
+                store.guildId,
+                store.trackTail,
+                store.trackDate,
+                store.trackTag
+            ].filter(x => x).join('-');
 
+            console.log('Storing as', cacheKey);
             cache[cacheKey] = store;
             fs.writeFileSync(fileName, JSON.stringify(cache, null, 4));
         } catch (e) {
