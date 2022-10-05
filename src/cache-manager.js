@@ -31,7 +31,6 @@ const CacheManager = {
             const cacheKey = JSON.stringify({
                 channelId: store.channelId,
                 guildId: store.guildId,
-                replyId: store.replyId,
                 flight: store.flight,
                 trackTail: store.trackTail,
                 trackDate: store.trackDate,
