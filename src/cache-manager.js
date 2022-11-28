@@ -3,6 +3,7 @@ const path = require('path');
 const dayjs = require('dayjs');
 
 const fileName = 'cache/cache.json';
+const FlightStatus = require('./model/flight-status');
 
 if (!fs.existsSync(fileName)) {
     fs.mkdirSync(path.basename(path.dirname(fileName)));
@@ -19,6 +20,16 @@ const CacheManager = {
             return {};
         }
     },
+    getKey: (store) => {
+        const cacheKey = [
+            store.channelId,
+            store.guildId,
+            store.trackTail,
+            store.trackDate,
+            store.trackTag
+        ].filter(x => x).join('-');
+        return cacheKey;
+    },
     store: (store) => {
         console.log('Adding to cache');
         if (!store.trackTail || !store.trackDate) {
@@ -28,13 +39,7 @@ const CacheManager = {
 
         try {
             const cache = CacheManager.retrieve();
-            const cacheKey = [
-                store.channelId,
-                store.guildId,
-                store.trackTail,
-                store.trackDate,
-                store.trackTag
-            ].filter(x => x).join('-');
+            const cacheKey = CacheManager.getKey(store);
 
             console.log('Storing as', cacheKey);
             cache[cacheKey] = store;
@@ -43,17 +48,27 @@ const CacheManager = {
             console.error(e);
         }
     },
-    delete: (tail, date) => {
+    delete: (store) => {
         try {
-            console.log('Deleting', tail, date);
-            if (tail && date) {
+            const cacheKey = CacheManager.getKey(store);
+            console.log('Deleting', cacheKey);
+            if (cacheKey) {
                 const cache = CacheManager.retrieve();
-                delete cache[tail + '-' + date];
+                delete cache[cacheKey];
                 fs.writeFileSync(fileName, JSON.stringify(cache, null, 4));
             }
         } catch (e) {
             console.error(e);
         }
+    },
+    cleanup: () => {
+        const cache = CacheManager.retrieve();
+        Object.values(cache).forEach(item => {
+            const flightStatus = item.flight?.flightStatus?.toUpperCase();
+            if ([FlightStatus.Cancelled, FlightStatus.Arrived].includes(flightStatus)) {
+                CacheManager.delete(item);
+            }
+        });
     },
     getToday: () => {
         console.log('Retrieving todays flight');
@@ -64,6 +79,8 @@ const CacheManager = {
         });
 
         console.log('Found', todaysFlights.length, 'flights');
+
+        CacheManager.cleanup();
 
         return todaysFlights;
     }

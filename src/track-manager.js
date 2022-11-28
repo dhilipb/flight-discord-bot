@@ -62,13 +62,13 @@ const TrackManager = {
     trackToday: async () => {
         const flightsToday = CacheManager.getToday();
 
-        for (const flightStore of flightsToday) {
+        for (const flightToday of flightsToday) {
 
-            const oldFlight = flightStore.flight;
+            const oldFlight = flightToday.flight;
             const oldFlightStatus = oldFlight?.flightStatus?.toUpperCase();
 
             if ([FlightStatus.Cancelled, FlightStatus.Arrived].includes(oldFlightStatus)) {
-                CacheManager.delete(flightStore.trackTail, flightStore.trackDate);
+                CacheManager.delete(flightToday);
                 continue;
             }
 
@@ -78,34 +78,34 @@ const TrackManager = {
                 continue;
             }
 
-            const flight = await FlightRetriever.get(flightStore.trackTail);
+            const flight = await FlightRetriever.get(flightToday.trackTail);
             if (!flight) {
                 continue;
             }
 
-            flightStore.flight = flight;
+            flightToday.flight = flight;
 
-            const replyText = await MessageGenerator.get(flight, flightStore.trackTag);
+            const replyText = await MessageGenerator.get(flight, flightToday.trackTag);
             if (!replyText) {
                 console.error('No reply text found');
                 return;
             }
 
-            const guild = DiscordClient.guilds.cache.get(flightStore.guildId);
-            const channel = guild.channels.cache.get(flightStore.channelId);
+            const guild = DiscordClient.guilds.cache.get(flightToday.guildId);
+            const channel = guild.channels.cache.get(flightToday.channelId);
 
-            const shouldUpdateMessage = flightStore.replyId && (flight.flightStatus === oldFlight?.flightStatus || FlightStatus.isScheduled(oldFlightStatus));
+            const shouldUpdateMessage = flightToday.replyId && (flight.flightStatus === oldFlight?.flightStatus || FlightStatus.isScheduled(oldFlightStatus));
             if (shouldUpdateMessage) {
-                const message = await channel.messages.fetch(flightStore.replyId);
-                console.log('Updating message', flightStore.trackTail);
+                const message = await channel.messages.fetch(flightToday.replyId);
+                console.log('Updating message', flightToday.trackTail);
                 message.edit({ embeds: [replyText] });
             } else {
                 const message = await channel.send({ embeds: [replyText] });
-                console.log('Sending message', flightStore.trackTail);
-                flightStore.replyId = message.id;
+                console.log('Sending message', flightToday.trackTail);
+                flightToday.replyId = message.id;
             }
 
-            CacheManager.store(flightStore);
+            CacheManager.store(flightToday);
         }
     },
 
