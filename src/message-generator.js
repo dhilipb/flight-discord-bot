@@ -170,6 +170,22 @@ const MessageGenerator = {
             console.error(e);
             return null;
         }
+    },
+
+    getAllFlights: (flights) => {
+        let message = '';
+
+        for (const [index, flight] of flights.entries()) {
+            if (flight.flight) {
+                message += [
+                    `${index + 1}) **${flight.trackTail}** on ${flight.trackDate}`,
+                    `${flight.flight.flightStatus.toUpperCase()} ${flight.trackTag ? ` - ${flight.trackTag}` : ''}`,
+                    `${flight.flight.origin.iata} => ${flight.flight.destination.iata}`
+                ].join('\n') + '\n\n';
+            }
+        }
+
+        return message || 'No flights available';
     }
 }
 

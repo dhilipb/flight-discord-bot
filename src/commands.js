@@ -3,6 +3,7 @@ const { REST } = require('@discordjs/rest');
 
 const commands = [
     new SlashCommandBuilder().setName('ping').setDescription('Replies with pong!'),
+    new SlashCommandBuilder().setName('flights').setDescription('Flights tracked in this channel'),
     new SlashCommandBuilder().setName('check').setDescription('Quick check for a flight tail')
         .addStringOption(option =>
             option.setName('tail')

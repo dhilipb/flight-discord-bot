@@ -105,7 +105,9 @@ const TrackManager = {
                 flightToday.replyId = message.id;
             }
 
-            CacheManager.store(flightToday);
+            if (![FlightStatus.Cancelled, FlightStatus.Arrived].includes(flight.flightStatus.toUpperCase())) {
+                CacheManager.store(flightToday);
+            }
         }
     },
 
@@ -134,6 +136,15 @@ const TrackManager = {
             console.error(e);
             await interaction.reply('Error in server. Please try again later');
         }
+    },
+
+    getAllFlights: async (interaction) => {
+        const cache = CacheManager.retrieve();
+        const flights = Object.values(cache).filter(flightEntry => {
+            return flightEntry.channelId === interaction.channelId && flightEntry.guildId === interaction.guildId;
+        });
+        const message = MessageGenerator.getAllFlights(flights);
+        await interaction.reply(message);
     }
 }
 

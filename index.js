@@ -29,6 +29,8 @@ if (!process.env.BOT_TOKEN || !process.env.BOT_CLIENT) {
             await TrackManager.trackToday();
         } else if (commandName === 'check') {
             await TrackManager.quickCheck(interaction);
+        } else if (commandName === 'flights') {
+            await TrackManager.getAllFlights(interaction);
         }
     });
 
