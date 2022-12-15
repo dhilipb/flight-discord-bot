@@ -94,7 +94,7 @@ const TrackManager = {
             const guild = DiscordClient.guilds.cache.get(flightToday.guildId);
             const channel = guild.channels.cache.get(flightToday.channelId);
 
-            const shouldUpdateMessage = flightToday.replyId && (flight.flightStatus === oldFlight?.flightStatus || FlightStatus.isScheduled(oldFlightStatus));
+            const shouldUpdateMessage = flightToday.replyId;
             if (shouldUpdateMessage) {
                 const message = await channel.messages.fetch(flightToday.replyId);
                 console.log('Updating message', flightToday.trackTail);
