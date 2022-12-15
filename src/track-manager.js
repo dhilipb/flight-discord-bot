@@ -105,9 +105,7 @@ const TrackManager = {
                 flightToday.replyId = message.id;
             }
 
-            if (![FlightStatus.Cancelled, FlightStatus.Arrived].includes(flight.flightStatus.toUpperCase())) {
-                CacheManager.store(flightToday);
-            }
+            CacheManager.store(flightToday);
         }
     },
 
